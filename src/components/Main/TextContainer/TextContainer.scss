@@ -1,0 +1,30 @@
+.text-block {
+    top: 0;
+    bottom: 0;
+    left: 230px;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.text-block p {
+    margin-top: 8px;
+}
+
+.text-block-btn {
+    margin-top: 60px;
+    border: 2px solid #E97477;
+    box-sizing: border-box;
+    border-radius: 3px;
+    background: #0A0A0A;
+    width: max-content;
+}
+
+.text-block-btn h4 {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
