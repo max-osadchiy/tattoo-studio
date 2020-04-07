@@ -1,0 +1,35 @@
+figure {
+    overflow: hidden;
+}
+
+figure img {
+    margin-right: -5.5%;
+}
+
+
+.wrapper {
+    margin-left: 70px;
+    margin-right: 70px;
+}
+
+.wrapper-abs {
+    margin-left: 4%;
+    margin-right: 4%;
+}
+
+.img-one {
+    float: right;
+    height: 100vh;
+}
+
+.high-number {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 200px;
+    line-height: 234px;
+    color: rgba(233, 116, 119, 0.1); 
+    position: absolute;
+    left: 165px;
+    top: 205px;
+}
