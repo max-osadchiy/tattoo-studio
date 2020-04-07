@@ -1,7 +1,12 @@
 import React from 'react'
+import MainPage from './routes/MainPage/MainPage'
 
-export const App = () => {
+const App = () => {
   return (
-    <div>Start coding!</div>
+    <div>
+      <MainPage/>
+    </div>
   )
 }
+
+export default App
