@@ -3,10 +3,10 @@
   "version": "1.0.0",
   "description": "Diploma project for Ira (server)",
   "scripts": {
-    "start": "nodemon .",
+    "start": "nodemon src/main.js",
     "build-tsc": "tsc",
     "watch-tsc": "tsc -w",
-    "watch-ts": "nodemon --watch 'src/**/*.ts' --exec 'ts-node' src/server.ts --config nodemon.json",
+    "watch-ts": "nodemon --watch 'src/**/*.ts' --exec 'ts-node' src/main.ts --config nodemon.json",
     "start-dev": "NODE_ENV=development npm run watch-ts"
   },
   "repository": {
@@ -20,11 +20,15 @@
   },
   "homepage": "https://github.com/max-osadchiy/tattoo-studio#readme",
   "dependencies": {
-    "@types/express": "^4.17.4",
-    "express": "^4.17.1"
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "googleapis": "^48.0.0",
+    "mongodb": "^3.5.5",
+    "mongoose": "^5.9.7",
+    "passport": "^0.4.1",
+    "passport-google-oauth20": "^2.0.0"
   },
   "devDependencies": {
-    "node-ts": "^5.0.5",
-    "typescript": "^3.8.3"
+    "nodemon": "^2.0.2"
   }
 }
