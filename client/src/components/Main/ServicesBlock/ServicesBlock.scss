@@ -11,24 +11,20 @@
     align-items: center;
     margin-top: 5%;
     justify-content: space-between;
-}
-
-.tattoo-block:nth-child(odd) .tattoo-text {
-    margin-right: 15%;
-}
-
+    
+    .tattoo-text {
+        margin-right: 15%;
+    }
+} 
+        
 .tattoo-block:nth-child(even) {
     display: flex;
-    flex-direction: row;
+    flex-direction: row-reverse;
     align-items: center;
     margin-top: 5%;
     justify-content: space-between;
-}
-        
-.tattoo-block:nth-child(even) .tattoo-img {
-    order: 1;
-}
 
-.tattoo-block:nth-child(even) .tattoo-text {
-    margin-left: 15%;
-}
+    .tattoo-text {
+        margin-left: 15%;
+    }
+} 
