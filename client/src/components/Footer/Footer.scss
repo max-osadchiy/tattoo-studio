@@ -1,0 +1,37 @@
+.footer {
+  display: flex;
+  width: 100vw;
+  justify-content: space-around;
+  height: 12vh;
+  & > .logo {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  & > .contacts {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    & > div {
+      display: flex;
+      justify-content: space-between;
+      & > div {
+        margin-right: 1.5vw;
+      }
+    }
+  }
+  & > .social {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    & > div {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      & > h4 {
+        margin: 0 1vw;
+      }
+    }
+  }
+}

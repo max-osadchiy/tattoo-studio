@@ -1,0 +1,149 @@
+.profile-header {
+  height: 16vh;
+}
+
+.profile-caption {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  & > h2 {
+    color: white;
+  }
+}
+
+.br {
+  margin-top: 4vh;
+}
+
+.profile-data {
+  display: flex;
+  width: 100%;
+  margin-top: 3vh;
+  & > div {
+    margin: 0 8vw;
+    width: 50vw;
+    & > .form {
+      display: flex;
+      flex-direction: column;
+      padding: 0 2vw;
+      & > div {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        & > span {
+          display: inline-flex;
+          & > img {
+            margin-right: -3vw;
+            margin-left: 2vw;
+          }
+        }
+        & > input {
+          margin: 2vh 0;
+          border: none;
+          background: transparent;
+          border-bottom: 1px solid #e97477;
+          width: 12vw;
+          &:focus {
+            outline: none;
+          }
+        }
+
+        & > button {
+          border: 2px solid rgba(233, 116, 119, 0.4);
+          box-sizing: border-box;
+          border-radius: 3px;
+          background: transparent;
+          width: 15vw;
+          height: 4vh;
+          color: #fafafa;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          text-transform: uppercase;
+          &:hover {
+            border: 2px solid #e97477;
+          }
+        }
+      }
+    }
+
+    & > .artist {
+      display: flex;
+      align-items: center;
+      width: 100%;
+      justify-content: space-between;
+      & > .rounded-img {
+        margin-top: 4vh;
+        width: 20vw;
+        & > img {
+          width: 100%;
+        }
+      }
+
+      & > .artist-info {
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: column;
+        align-items: center;
+        margin-left: 15vw;
+        width: 70%;
+        & > p {
+          margin-top: 1vh;
+          border-bottom: 2px solid #e97477;
+        }
+        & > h4 {
+          color: #e97477;
+          text-transform: uppercase;
+          margin-top: 2vh;
+        }
+      }
+    }
+
+    & > .sessions {
+      display: flex;
+      flex-direction: column;
+      & > div {
+        display: flex;
+        justify-content: space-between;
+        width: 50%;
+      }
+    }
+  }
+}
+
+.buttons {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  .lower-btn {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 4vh;
+    &.right {
+      justify-content: flex-start;
+    }
+    & > button {
+      background: transparent;
+      border: 2px solid rgba(233, 116, 119, 0.4);
+      box-sizing: border-box;
+      border-radius: 3px;
+      width: 15vw;
+      height: 4vh;
+      color: #fafafa;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-transform: uppercase;
+      &:hover {
+        border: 2px solid #e97477;
+      }
+      &.right-btn {
+        background-color: #e97477;
+      }
+    }
+  }
+}
+
+.profile-footer {
+  margin-top: 4vh;
+}
