@@ -1,0 +1,45 @@
+.footer {
+  display: flex;
+  width: 100vw;
+  justify-content: space-around;
+  height: 12vh;
+  margin-top: 6%;
+  margin-bottom: 3%;
+  padding-top: 4%;
+  border-top: 2px solid rgba(233, 116, 119, 0.1);
+  & > .logo {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  & > .contacts {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    & > div {
+      display: flex;
+      justify-content: space-between;
+      & > div {
+        margin-right: 1.5vw;
+      }
+    }
+  }
+  & > .social {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    & > div {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      & > h4 {
+        margin: 0 1vw;
+      }
+    }
+  }
+}
+
+.logo p {
+  margin-top: 50px;
+}
