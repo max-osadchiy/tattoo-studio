@@ -1,0 +1,125 @@
+.appointment-content {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: flex-start;
+  & > h1 {
+    text-transform: uppercase;
+    margin: 18vh 0 0 12vw;
+  }
+  & > .form {
+    display: flex;
+    flex-direction: column;
+    // justify-content: space-between;
+    height: 70%;
+    margin: 18vh 0 0 15vw;
+    width: 45.5vw;
+    & > .center {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      height: 70%;
+      align-items: center;
+      padding-top: 2vh;
+      & > input {
+        width: 100%;
+        border: none;
+        background: transparent;
+        border-bottom: 1px solid #e97477;
+      }
+      & > textarea {
+        width: 100%;
+        border: none;
+        background: transparent;
+        border: 1px solid #e97477;
+        border-radius: 8px;
+        padding: 4px;
+      }
+    }
+    & > .start {
+      padding-top: 4vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      height: 30%;
+      & > div {
+        display: flex;
+        & > p {
+          margin-left: 1vw;
+        }
+      }
+      & > .checkbox,
+      & > button {
+        width: 10%;
+        justify-content: flex-start;
+      }
+    }
+  }
+}
+
+.tgl {
+  display: none;
+
+  // add default box-sizing for this scope
+  &,
+  &:after,
+  &:before,
+  & *,
+  & *:after,
+  & *:before,
+  & + .tgl-btn {
+    box-sizing: border-box;
+    &::selection {
+      background: none;
+    }
+  }
+
+  + .tgl-btn {
+    outline: 0;
+    display: block;
+    width: 4em;
+    height: 2em;
+    position: relative;
+    cursor: pointer;
+    user-select: none;
+    &:after,
+    &:before {
+      position: relative;
+      display: block;
+      content: '';
+      width: 50%;
+      height: 100%;
+    }
+
+    &:after {
+      left: 0;
+    }
+
+    &:before {
+      display: none;
+    }
+  }
+
+  &:checked + .tgl-btn:after {
+    left: 50%;
+  }
+}
+
+// themes
+.tgl-light {
+  + .tgl-btn {
+    background: #888888;
+    border-radius: 2em;
+    padding: 2px;
+    transition: all 0.4s ease;
+    &:after {
+      border-radius: 50%;
+      background: #fff;
+      transition: all 0.2s ease;
+    }
+  }
+
+  &:checked + .tgl-btn {
+    background: #9fd6ae;
+  }
+}

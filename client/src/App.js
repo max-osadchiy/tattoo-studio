@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import MainPage from './routes/MainPage/MainPage';
 import AboutPage from './routes/AboutPage/AboutPage';
 import ProfilePage from './routes/ProfilePage/ProfilePage';
+import AppointmentPage from './routes/AppointmentPage/AppointmentPage';
 import { ArtistsProvider } from './contexts/ArtistsContext';
 
 const App = () => {
@@ -10,6 +11,7 @@ const App = () => {
     <Router>
       <Switch>
         <Route path="/" component={MainPage} exact />
+        <Route path="/appointment" component={AppointmentPage} exact />
         <ArtistsProvider>
           <Route path="/about" component={AboutPage} exact />
           <Route path="/profile" component={ProfilePage} exact />

@@ -1,20 +1,24 @@
 .Header {
-    top: 25px;
-    display: flex;
-    position: absolute;
-    width: 92%;
-    justify-content: space-between;
+  top: 25px;
+  display: flex;
+  position: absolute;
+  width: 92%;
+  justify-content: space-between;
 }
 
 .menu {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: start;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  transition: 1s;
+  &:hover {
+    align-items: flex-end;
+  }
 }
 
 .phone-num {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 }

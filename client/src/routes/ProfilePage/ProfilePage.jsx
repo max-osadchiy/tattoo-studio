@@ -2,15 +2,28 @@ import React, { useContext, useState } from 'react';
 
 import Header from '../../components/Header/Header';
 import { ArtistsContext } from '../../contexts/ArtistsContext';
-import './ProfilePage.scss';
-import calendarImage from '../../img/calendar.svg';
+import UploadTattoo from '../../components/UploadTattoo/UploadTattoo';
 import Footer from '../../components/Footer/Footer';
+import calendarImage from '../../img/calendar.svg';
+import arrowDown from '../../img/arr-down.svg';
+import arrowUp from '../../img/arr-up.svg';
+import './ProfilePage.scss';
 
 const ProfilePage = () => {
   const artists = useContext(ArtistsContext).artists[0];
   const [artistId, setArtistId] = useState(0);
+  const [hidden, setHidden] = useState(true);
+  const [dateField, setDateField] = useState(false);
+  const [upload, setUpload] = useState(false);
+
+  const change = (art) => {
+    setHidden(!hidden);
+    setArtistId(art.id - 1);
+  };
+
   return (
     <div>
+      <UploadTattoo view={upload} setView={setUpload} />
       <div className="profile-header">
         <Header />
       </div>
@@ -28,7 +41,12 @@ const ProfilePage = () => {
               </div>
               <div>
                 <h3>Date of birth</h3>
-                <input type="date" placeholder="Your birth date" />
+                <input
+                  onFocus={() => setDateField(!dateField)}
+                  onBlur={() => setDateField(!dateField)}
+                  type={dateField ? 'date' : 'text'}
+                  placeholder="Your birth date"
+                />
               </div>
               <div>
                 <h3>Phone</h3>
@@ -65,7 +83,30 @@ const ProfilePage = () => {
               </div>
 
               <div className="artist-info">
-                <h2>{artists[artistId].name}</h2>
+                <span>
+                  <h2>{artists[artistId].name}</h2>
+                  <img
+                    onClick={() => setHidden(!hidden)}
+                    src={hidden ? arrowDown : arrowUp}
+                    alt="arrow down"
+                  />
+                </span>
+                <div
+                  style={{ display: hidden ? 'none' : 'block' }}
+                  className="hidden-select"
+                >
+                  {artists.map((art) =>
+                    art.id === artistId + 1 ? null : (
+                      <h2
+                        style={{ borderBottom: '1px solid #e97477' }}
+                        onClick={() => change(art)}
+                        key={art.id}
+                      >
+                        {art.name}
+                      </h2>
+                    )
+                  )}
+                </div>
                 <p>{artists[artistId].sphere}</p>
                 <h4>Look more</h4>
               </div>
@@ -86,7 +127,7 @@ const ProfilePage = () => {
         </div>
         <div className="buttons">
           <div className="lower-btn">
-            <button>Upload tattoo +</button>
+            <button onClick={() => setUpload(!upload)}>Upload tattoo +</button>
           </div>
           <div className="lower-btn right">
             <button className="right-btn">Get an appointment</button>
