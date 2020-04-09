@@ -52,7 +52,7 @@ const ServicesBlock = () => {
                     {event.discription_2}<br/>
                     {event.discription_3}
                 </p>
-                <h4 style={{ color: '#E97477', float: 'right', marginTop: '8%' }}>next <img style={{ marginLeft: '12px'  }} src={arrow} alt=""/></h4>
+                <h4>next <img style={{ marginLeft: '12px'  }} src={arrow} alt=""/></h4>
             </div>
         </div>
     ))
