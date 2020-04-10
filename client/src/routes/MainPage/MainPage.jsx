@@ -54,7 +54,6 @@ const MainPage = () => {
                 <button className="fourth-btn"><h4 style={{ color: '#FAFAFA' }}>Get an appointment</h4></button>
             </div>
             <div className="fifth-block">
-                <img style={{ position: 'absolute', right: '-152px', top: '-139px' }} src={rectTwo} alt=""/>
                 <h1>Reviews</h1>
                 <span className='high-number high-number-four'>4</span>
                 <div className="reviews-container">
