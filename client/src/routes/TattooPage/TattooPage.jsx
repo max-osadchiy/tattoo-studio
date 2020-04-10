@@ -1,5 +1,6 @@
 import React from 'react'
 import Header from '../../components/Header/Header'
+import Footer from '../../components/Footer/Footer'
 
 import './TattooPage.scss'
 import tattoo_one_img from '../../img/tattoo-one.svg'
@@ -7,7 +8,6 @@ import tattoo_two_img from '../../img/tattoo-two.svg'
 import arrow_left from '../../img/arrow-l.svg'
 import line_tattoo from '../../img/line-tattoo.svg'
 
-import Footer from '../../components/Footer/Footer'
 
 const TattooPage = () => {
     return (
