@@ -21,11 +21,18 @@
       height: 70%;
       align-items: center;
       padding-top: 2vh;
+      & > .warning {
+        margin-top: -5vh;
+        width: 100%;
+        color: #e97477;
+        display: none;
+      }
       & > input {
         width: 100%;
         border: none;
         background: transparent;
         border-bottom: 1px solid #e97477;
+        color: white;
       }
       & > textarea {
         width: 100%;
@@ -34,6 +41,7 @@
         border: 1px solid #e97477;
         border-radius: 8px;
         padding: 4px;
+        color: white;
       }
     }
     & > .start {
@@ -50,8 +58,42 @@
       }
       & > .checkbox,
       & > button {
-        width: 10%;
+        width: 23%;
+        height: 4.8vh;
         justify-content: flex-start;
+        background: #e97477;
+        border: 0;
+        border-radius: 3px;
+        color: white;
+        &:hover {
+          box-shadow: 0px 4px 20px rgba(233, 116, 119, 0.5);
+        }
+      }
+    }
+  }
+
+  & > .thanks {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    & > h1 {
+      text-align: center;
+    }
+    & > h2 {
+      margin-top: 4vh;
+      text-align: center;
+    }
+    & > a {
+      position: absolute;
+      top: 2vh;
+      left: 3vw;
+      width: 48px;
+      height: 48px;
+      & > div > img {
+        width: 100%;
       }
     }
   }
