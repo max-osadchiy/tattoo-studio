@@ -1,0 +1,47 @@
+.per-makeup-header {
+    height: 14vh;
+}
+
+.per-makeup-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    position: relative;
+}
+
+.per-makeup-container h4 {
+    color: #E97477;
+}
+
+.per-makeup-container h2,h1 {
+    margin-top: 7%;
+}
+
+.per-makeup-text {
+    width: 40%;
+    margin-left: 3%;
+    margin-right: 25%;
+}
+
+.per-makeup-img-two {
+    position: absolute;
+    right: 65px;
+    bottom: 65px;
+}
+
+.per-makeup-btn {
+    margin-top: 7%;
+    background: #0A0A0A;
+    border: 2px solid rgba(233, 116, 119, 0.4);
+    box-sizing: border-box;
+    border-radius: 3px;
+    padding: 20px 60px;
+}
+
+.per-makeup-btn h4 {
+    color: #FAFAFA;
+}
+
+.footer {
+    margin-top: 0;
+}
