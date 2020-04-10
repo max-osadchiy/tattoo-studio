@@ -87,6 +87,21 @@
         align-items: center;
         margin-left: 15vw;
         width: 70%;
+        & > span {
+          width: 100%;
+          display: flex;
+          justify-content: space-between;
+          & > img:hover {
+            cursor: pointer;
+          }
+        }
+        & > .hidden-select {
+          width: 100%;
+          margin-top: 2vh;
+          & > h2:hover {
+            cursor: pointer;
+          }
+        }
         & > p {
           margin-top: 1vh;
           border-bottom: 2px solid #e97477;

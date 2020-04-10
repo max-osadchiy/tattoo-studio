@@ -1,0 +1,68 @@
+.upload-block {
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  & > .upload-form {
+    width: 41vw;
+    height: 51vh;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    & > .close-cross {
+      position: absolute;
+      top: 26vh;
+      height: 48px;
+      width: 48px;
+      right: 31vw;
+      z-index: 2;
+      & > img {
+        width: 100%;
+      }
+    }
+    & > div {
+      text-align: center;
+      height: 32%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      & > h1,
+      & > h2 {
+        color: black;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+      }
+      & > h1 {
+        margin-bottom: 4vh;
+        border: 1px solid black;
+        &:hover {
+          cursor: pointer;
+          border: 2px solid #e97477;
+        }
+      }
+    }
+  }
+
+  & > .photo {
+    position: absolute;
+    width: 41vw;
+    height: 51vh;
+    top: 24.5vh;
+    z-index: 1;
+    & > img {
+      width: 100%;
+      height: 85%;
+    }
+    & > h3 {
+      margin-top: 2vh;
+      color: black;
+      text-align: center;
+    }
+  }
+}
