@@ -1,9 +1,15 @@
 import React from 'react'
+import Slider from 'react-slick'
 
-import './ReviewsContainer'
+import './ReviewsContainer.scss'
+import "slick-carousel/slick/slick.css"; 
+import "slick-carousel/slick/slick-theme.css";
 import avatar_1 from '../../../img/Anna.svg'
 import avatar_2 from '../../../img/Alex.svg'
 import avatar_3 from '../../../img/Mark.svg'
+import avatar_4 from '../../../img/Viktoria.svg';
+import arrowLeft from '../../../img/arrow-left.svg'
+import arrowRight from '../../../img/arrow-right.svg'
 
 const ReviewsContainer = () => {
     const s = [
@@ -28,19 +34,60 @@ const ReviewsContainer = () => {
             'discription_2': 'explained everything and said how to care',
             'discription_3': 'for the tattoo. I am forever your client!',
         },
+        {
+            'img': avatar_4,
+            'name': 'Viktoria',
+            'discription_1': 'I liked the service! I am forever',
+            'discription_2': 'your client! Will be back',
+            'discription_3': 'here again.',
+        },
+
     ]
 
-    return s.map(event => (
-        <div className="person-block">
-            <img src={event.img} alt=""/>
-            <h2 style={{ marginTop: '5%' }}>{event.name}</h2>
-            <p style={{ marginTop: '5%' }}>
-                {event.discription_1}<br/>
-                {event.discription_2}<br/>
-                {event.discription_3}
-            </p>
+    // const arrow_left = (
+    //     <div>
+    //         <img src={arrowLeft} alt=""/>
+    //     </div>
+    // )
+    
+
+    // const arrow_right = (
+    //     <div>
+    //         <img src={arrowRight} alt=""/>
+    //     </div>
+    // )
+
+    const settings = {
+        dots: true,
+        infinite: true,
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        autoplay: true,
+        speed: 1000,
+        autoplaySpeed: 3000,
+        cssEase: "linear",
+        arrows: false,
+        // prevArrow: arrow_left,
+        // nextArrow: arrow_right,
+    }
+
+    return (
+        <div>
+            <Slider {...settings}>
+            {s.map(event => (
+            <div style={{ display:'flex', justifyContent:'center',flexDirection:'column',alignItems:'center' }} className="person-block">
+                <img src={event.img} alt=""/>
+                <h2 style={{ marginTop: '5%' }}>{event.name}</h2>
+                <p style={{ marginTop: '5%' }}>
+                    {event.discription_1}<br/>
+                    {event.discription_2}<br/>
+                    {event.discription_3}
+                </p>
+            </div>
+            ))}
+            </Slider>
         </div>
-    ))
+    )
 }
 
 export default ReviewsContainer

@@ -9,10 +9,7 @@ import Footer from '../../components/Footer/Footer'
 
 import imgOne from '../../img/Main/1img.jpg'
 import swipe from '../../img/swipe.svg';
-import arrowLeft from '../../img/arrow-left.svg'
-import arrowRight from '../../img/arrow-right.svg'
 import rect from '../../img/rect.svg';
-import rectTwo from '../../img/rect2.svg';
 import './MainPage.scss'
 
 
@@ -57,9 +54,8 @@ const MainPage = () => {
                 <h1>Reviews</h1>
                 <span className='high-number high-number-four'>4</span>
                 <div className="reviews-container">
-                    <div><img src={arrowLeft} alt=""/></div>
                     <ReviewsContainer/>
-                    <div><img src={arrowRight} alt=""/></div>
+                    <div className='shadow-block'></div>
                 </div>
             </div>
             <Footer />

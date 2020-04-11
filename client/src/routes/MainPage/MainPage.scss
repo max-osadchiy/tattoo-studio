@@ -106,6 +106,7 @@ figure img {
 
 .fourth-block h1, h2 {
     margin-bottom: 2%;
+    margin-top: 0;
 }
 
 .fourth-btn {
@@ -121,22 +122,23 @@ figure img {
     margin-top: 120px;
     margin-left: 12%;
     margin-right: 12%;
+    margin-bottom: 100px;
 }
 
 .reviews-container {
     margin-top: 5%;
-    display: flex;
-    justify-content: space-between;
     text-align: center;
     align-items: center;
     margin-bottom: 5%;
 }
 
-.person-block {
-    padding: 60px 30px;
-}
-
-.person-block:nth-child(odd) {
-    background: #0A0A0A;
+.shadow-block {
+    height: 439px;
+    align-items: center;
+    position: absolute;
+    width: 31%;
+    margin-left: 36.5%;
+    bottom: -1px;
+    display: flex;
     box-shadow: 0px 12px 50px rgba(233, 116, 119, 0.25);
 }

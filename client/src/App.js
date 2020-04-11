@@ -11,6 +11,7 @@ import PiercingPage from './routes/PiercingPage/PiercingPage'
 import TattooRemovalPage from './routes/TattooRemovalPage/TattooRemovalPage'
 import PermanentMakeupPage from './routes/PermanentMakeupPage/PermanentMakeupPage'
 
+
 const App = () => {
   return (
     <Router>
