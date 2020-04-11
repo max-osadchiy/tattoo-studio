@@ -7,12 +7,18 @@
     text-transform: uppercase;
     margin: 18vh 0 0 12vw;
   }
+  & > .line {
+    width: 12.5vw;
+    height: 0px;
+    border: 2px solid #e97477;
+    margin: 22vh 0 0 4vw;
+  }
   & > .form {
     display: flex;
     flex-direction: column;
     // justify-content: space-between;
     height: 70%;
-    margin: 18vh 0 0 15vw;
+    margin: 18vh 0 0 6vw;
     width: 45.5vw;
     & > .center {
       display: flex;

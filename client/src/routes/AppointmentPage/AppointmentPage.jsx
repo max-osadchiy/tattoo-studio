@@ -13,7 +13,13 @@ const AppointmentPage = () => {
 
   return (
     <div className="appointment-content">
+      <Link to="/">
+        <div className="close-cross">
+          <img src={cross} alt="" />
+        </div>
+      </Link>
       <h1 style={{ display: sent ? 'none' : 'block' }}>let's talk</h1>
+      <div className="line"></div>
       <div style={{ display: sent ? 'none' : 'block' }} className="form">
         <div className="center">
           <input type="text" placeholder="Name*" />
