@@ -1,0 +1,47 @@
+.tattoo-rem-header {
+    height: 14vh;
+}
+
+.tattoo-rem-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    position: relative;
+}
+
+.tattoo-rem-container h4 {
+    color: #E97477;
+}
+
+.tattoo-rem-container h2,h1 {
+    margin-top: 7%;
+}
+
+.tattoo-rem-text {
+    width: 60%;
+    margin-left: 3%;
+    margin-right: 19%;
+}
+
+.tattoo-rem-img-two {
+    position: absolute;
+    right: 65px;
+    bottom: 65px;
+}
+
+.tattoo-rem-btn {
+    margin-top: 7%;
+    background: #0A0A0A;
+    border: 2px solid rgba(233, 116, 119, 0.4);
+    box-sizing: border-box;
+    border-radius: 3px;
+    padding: 20px 60px;
+}
+
+.tattoo-rem-btn h4 {
+    color: #FAFAFA;
+}
+
+.footer {
+    margin-top: 0;
+}

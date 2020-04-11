@@ -10,10 +10,7 @@ import Footer from '../../components/Footer/Footer';
 
 import imgOne from '../../img/Main/1img.jpg';
 import swipe from '../../img/swipe.svg';
-import arrowLeft from '../../img/arrow-left.svg';
-import arrowRight from '../../img/arrow-right.svg';
 import rect from '../../img/rect.svg';
-import rectTwo from '../../img/rect2.svg';
 import './MainPage.scss';
 
 const MainPage = () => {
@@ -73,28 +70,16 @@ const MainPage = () => {
           We are waiting <br /> for you
         </h1>
         <h2>Leave a request and we will call you back right now</h2>
-        <Link to="/appointment">
-          <button className="fourth-btn">
-            <h4 style={{ color: '#FAFAFA' }}>Get an appointment</h4>
-          </button>
-        </Link>
+        <button className="fourth-btn">
+          <h4 style={{ color: '#FAFAFA' }}>Get an appointment</h4>
+        </button>
       </div>
       <div className="fifth-block">
-        <img
-          style={{ position: 'absolute', right: '-152px', top: '-139px' }}
-          src={rectTwo}
-          alt=""
-        />
         <h1>Reviews</h1>
         <span className="high-number high-number-four">4</span>
         <div className="reviews-container">
-          <div>
-            <img src={arrowLeft} alt="" />
-          </div>
           <ReviewsContainer />
-          <div>
-            <img src={arrowRight} alt="" />
-          </div>
+          <div className="shadow-block"></div>
         </div>
       </div>
       <Footer />
