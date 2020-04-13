@@ -4,8 +4,27 @@ import './Header.scss';
 import lineLong from '../../img/LineLong.svg';
 import lineShort from '../../img/LineShort.svg';
 import logo from '../../img/Logo.svg';
+import { Link } from 'react-router-dom';
 
 const Header = () => {
+  const signIn = () => {
+    const auth2 = window.gapi.auth2.getAuthInstance();
+    auth2.signIn().then((googleUser) => {
+      // метод возвращает объект пользователя
+      // где есть все необходимые нам поля
+      const profile = googleUser.getBasicProfile();
+      localStorage.setItem('name', profile.getName());
+      localStorage.setItem('email', profile.getEmail());
+      window.location.reload();
+    });
+  };
+  const signOut = () => {
+    const auth2 = window.gapi.auth2.getAuthInstance();
+    auth2.signOut().then(() => {
+      console.log('User signed out.');
+    });
+  };
+
   return (
     <div className="Header wrapper-abs">
       <div className="menu">
@@ -16,7 +35,13 @@ const Header = () => {
         <img src={logo} alt="logo" />
       </div>
       <div className="phone-num">
-        <h3>{localStorage.getItem('name') || '+38 (098) 414 12 00'}</h3>
+        {localStorage.getItem('name') ? (
+          <Link to="/profile">
+            <h3>{localStorage.getItem('name')}</h3>
+          </Link>
+        ) : (
+          <h3 onClick={signIn}>Log in</h3>
+        )}
       </div>
     </div>
   );

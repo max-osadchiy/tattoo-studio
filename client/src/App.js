@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import MainPage from './routes/MainPage/MainPage';
 import AboutPage from './routes/AboutPage/AboutPage';
@@ -13,6 +13,22 @@ import PermanentMakeupPage from './routes/PermanentMakeupPage/PermanentMakeupPag
 import AboutArtist from './routes/AboutArtist/AboutArtist';
 
 const App = () => {
+  useEffect(() => {
+    const _onInit = (auth2) => {
+      console.log('init OK', auth2);
+    };
+    const _onError = (err) => {
+      console.log('error', err);
+    };
+    window.gapi.load('auth2', function () {
+      window.gapi.auth2
+        .init({
+          client_id: process.env.REACT_APP_GOOGLE_CLIENT_ID,
+        })
+        .then(_onInit, _onError);
+    });
+  }, []);
+
   return (
     <Router>
       <Switch>

@@ -1,4 +1,5 @@
 import React, { useContext, useState } from 'react';
+import { Link } from 'react-router-dom';
 
 import Header from '../../components/Header/Header';
 import { ArtistsContext } from '../../contexts/ArtistsContext';
@@ -7,8 +8,8 @@ import Footer from '../../components/Footer/Footer';
 import calendarImage from '../../img/calendar.svg';
 import arrowDown from '../../img/arr-down.svg';
 import arrowUp from '../../img/arr-up.svg';
+import arrowRight from '../../img/arrow.svg';
 import './ProfilePage.scss';
-import { Link } from 'react-router-dom';
 
 const ProfilePage = () => {
   const artists = useContext(ArtistsContext).artists[0];
@@ -17,9 +18,21 @@ const ProfilePage = () => {
   const [dateField, setDateField] = useState(false);
   const [upload, setUpload] = useState(false);
 
+  const [name, setName] = useState('');
+  const [birth, setBirth] = useState('');
+  const [phone, setPhone] = useState('');
+  const [email, setEmail] = useState('');
+
   const change = (art) => {
     setHidden(!hidden);
     setArtistId(art.id - 1);
+  };
+
+  const changeInfo = () => {
+    localStorage.setItem('name', name);
+    localStorage.setItem('birth', birth);
+    localStorage.setItem('phone', phone);
+    localStorage.setItem('email', email);
   };
 
   return (
@@ -38,28 +51,49 @@ const ProfilePage = () => {
             <div className="form">
               <div>
                 <h3>Name</h3>
-                <input type="text" placeholder="Your name" />
+                <input
+                  onChange={(e) => setName(e.target.value)}
+                  value={localStorage.getItem('name') || name}
+                  id="user-name"
+                  type="text"
+                  placeholder="Your name"
+                />
               </div>
               <div>
                 <h3>Date of birth</h3>
                 <input
                   onFocus={() => setDateField(!dateField)}
                   onBlur={() => setDateField(!dateField)}
+                  onChange={(e) => setBirth(e.target.value)}
+                  value={localStorage.getItem('birth') || birth}
+                  id="user-birth"
                   type={dateField ? 'date' : 'text'}
                   placeholder="Your birth date"
                 />
               </div>
               <div>
                 <h3>Phone</h3>
-                <input type="text" placeholder="Your phone" />
+                <input
+                  id="user-phone"
+                  onChange={(e) => setPhone(e.target.value)}
+                  value={localStorage.getItem('phone') || phone}
+                  type="text"
+                  placeholder="Your phone"
+                />
               </div>
               <div>
                 <h3>E-Mail</h3>
-                <input type="text" placeholder="Your email" />
+                <input
+                  onChange={(e) => setEmail(e.target.value)}
+                  value={localStorage.getItem('email') || email}
+                  id="user-email"
+                  type="text"
+                  placeholder="Your email"
+                />
               </div>
               <div>
                 <h3>&nbsp;</h3>
-                <button>Edit</button>
+                <button onClick={changeInfo}>Edit</button>
               </div>
               <div className="br">
                 <h3>Last session</h3>
@@ -109,7 +143,15 @@ const ProfilePage = () => {
                   )}
                 </div>
                 <p>{artists[artistId].skills}</p>
-                <h4>Look more</h4>
+                <Link
+                  to={`/about/${artists[artistId].name
+                    .split(' ')[0]
+                    .toLowerCase()}`}
+                >
+                  <h4>
+                    Look more <img src={arrowRight} />
+                  </h4>
+                </Link>
               </div>
             </div>
 

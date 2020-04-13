@@ -1,5 +1,5 @@
 import React, { useRef, useState } from 'react';
-import cross from '../../img/cross.svg';
+import cross from '../../img/cross-black.svg';
 import './UploadTattoo.scss';
 
 const UploadTattoo = ({ view, setView }) => {

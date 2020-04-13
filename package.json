@@ -5,7 +5,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start:client": "cd client && npm run start",
-    "start:server": "cd server && npm run watch:ts"
+    "start:server": "cd server && npm run start"
   },
   "repository": {
     "type": "git",
