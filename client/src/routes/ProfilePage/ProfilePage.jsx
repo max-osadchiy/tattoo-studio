@@ -8,6 +8,7 @@ import calendarImage from '../../img/calendar.svg';
 import arrowDown from '../../img/arr-down.svg';
 import arrowUp from '../../img/arr-up.svg';
 import './ProfilePage.scss';
+import { Link } from 'react-router-dom';
 
 const ProfilePage = () => {
   const artists = useContext(ArtistsContext).artists[0];
@@ -79,7 +80,7 @@ const ProfilePage = () => {
             <h2>Your artist</h2>
             <div className="artist">
               <div className="rounded-img">
-                <img src={artists[artistId].photo} alt="" />
+                <img src={artists[artistId].photoCropped} alt="" />
               </div>
 
               <div className="artist-info">
@@ -107,7 +108,7 @@ const ProfilePage = () => {
                     )
                   )}
                 </div>
-                <p>{artists[artistId].sphere}</p>
+                <p>{artists[artistId].skills}</p>
                 <h4>Look more</h4>
               </div>
             </div>
@@ -130,7 +131,9 @@ const ProfilePage = () => {
             <button onClick={() => setUpload(!upload)}>Upload tattoo +</button>
           </div>
           <div className="lower-btn right">
-            <button className="right-btn">Get an appointment</button>
+            <Link to="appointment">
+              <button className="right-btn">Get an appointment</button>
+            </Link>
           </div>
         </div>
       </div>

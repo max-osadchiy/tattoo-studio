@@ -137,7 +137,11 @@
     &.right {
       justify-content: flex-start;
     }
-    & > button {
+    & > a {
+      text-decoration: none;
+    }
+    & > button,
+    & > a > button {
       background: transparent;
       border: 2px solid rgba(233, 116, 119, 0.4);
       box-sizing: border-box;

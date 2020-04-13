@@ -1,0 +1,88 @@
+.about-artist {
+  width: 100vw;
+  & > .about-header {
+    display: flex;
+    height: 88vh;
+    margin-top: 12vh;
+    & > .artist-info {
+      margin: 0 8vw;
+      width: 50vw;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      & > .skills {
+        display: block;
+        &::after {
+          content: '';
+          display: block;
+          text-align: start;
+          width: 20%;
+          padding-top: 20px;
+          border-bottom: 1px solid #e97477;
+        }
+      }
+      & > h1,
+      & > p,
+      & > button {
+        margin: 2vh 0;
+      }
+      & > a {
+        text-decoration: none;
+      }
+    }
+
+    & > .artist-img {
+      width: 50vw;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      & > img {
+        max-width: 50vw;
+        max-height: 88vh;
+      }
+    }
+  }
+  & > .about-works {
+    & > h1 {
+      margin: 4vh 8vw;
+    }
+    & > .about-photos {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      width: 100vw;
+      & > img {
+        width: 92%;
+        height: 54.4vh;
+        margin: 1.5vh 1vw;
+      }
+    }
+    & > .app-btn {
+      margin: 2vh 0;
+      width: 100vw;
+      display: flex;
+      justify-content: center;
+      margin-bottom: 8vh;
+      & > a {
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+button {
+  background: transparent;
+  border: 2px solid rgba(233, 116, 119, 0.4);
+  box-sizing: border-box;
+  border-radius: 3px;
+  width: 12vw;
+  height: 4vh;
+  color: #fafafa;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+  &:hover {
+    border: 2px solid #e97477;
+  }
+}
