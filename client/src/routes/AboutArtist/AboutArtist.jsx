@@ -75,7 +75,7 @@ const AboutArtist = () => {
           ))}
         </div>
         <div className="app-btn">
-          <Link to="appointment">
+          <Link to="/appointment">
             <button className="right-btn">Get an appointment</button>
           </Link>
         </div>

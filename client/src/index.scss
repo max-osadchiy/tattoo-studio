@@ -64,6 +64,16 @@ p {
   letter-spacing: 0.04em;
 }
 
+.reset-btn {
+  color: #e97477;
+  opacity: 0.5;
+  transition: 1s;
+}
+
+.reset-btn:hover {
+  opacity: 1;
+}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;

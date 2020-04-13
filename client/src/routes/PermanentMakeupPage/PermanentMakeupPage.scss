@@ -1,47 +1,69 @@
 .per-makeup-header {
-    height: 14vh;
+  height: 14vh;
 }
 
 .per-makeup-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  position: relative;
 }
 
 .per-makeup-container h4 {
-    color: #E97477;
+  color: #e97477;
 }
 
-.per-makeup-container h2,h1 {
-    margin-top: 7%;
+.per-makeup-container h2,
+h1 {
+  margin-top: 7%;
+  margin-bottom: 0;
 }
 
 .per-makeup-text {
-    width: 40%;
-    margin-left: 3%;
-    margin-right: 25%;
+  width: 40%;
+  margin-left: 3%;
+  margin-right: 25%;
+  & > h4:hover {
+    cursor: pointer;
+  }
 }
 
 .per-makeup-img-two {
-    position: absolute;
-    right: 65px;
-    bottom: 65px;
+  position: absolute;
+  right: 65px;
+  bottom: 65px;
 }
 
 .per-makeup-btn {
-    margin-top: 7%;
-    background: #0A0A0A;
-    border: 2px solid rgba(233, 116, 119, 0.4);
-    box-sizing: border-box;
-    border-radius: 3px;
-    padding: 20px 60px;
+  margin-top: 7%;
+  background: #0a0a0a;
+  border: 2px solid rgba(233, 116, 119, 0.4);
+  box-sizing: border-box;
+  border-radius: 3px;
+  padding: 20px 60px;
+  width: auto;
+  height: auto;
+  transition: 1s;
+}
+
+.per-makeup-btn:hover {
+  background: #E97477;
+  color: #fafafa;
+  padding: 15px 50px;
 }
 
 .per-makeup-btn h4 {
-    color: #FAFAFA;
+  color: #fafafa;
 }
 
 .footer {
-    margin-top: 0;
+  margin-top: 0;
+}
+
+.perm-first::after {
+  content: ' service is a cosmetic procedure.';
+}
+
+.perm-second::after {
+  content: ' is a cosmetic technique which';
 }

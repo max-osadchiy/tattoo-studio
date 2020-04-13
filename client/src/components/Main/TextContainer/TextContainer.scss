@@ -1,15 +1,15 @@
 .text-block {
-    top: 0;
-    bottom: 0;
-    left: 230px;
-    position: absolute;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+  top: 0;
+  bottom: 0;
+  left: 230px;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .text-block p {
-    margin-top: 8px;
+  margin-top: 8px;
 }
 
 .text-block-btn {
@@ -19,6 +19,7 @@
     border-radius: 3px;
     background: #0A0A0A;
     width: max-content;
+    height: auto;
     transition: 1s;
 }
 

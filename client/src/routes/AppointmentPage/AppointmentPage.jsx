@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
 
-import cross from '../../img/cross-white.svg';
+import cross from '../../img/cross.svg';
 import './AppointmentPage.scss';
 import { Link } from 'react-router-dom';
 
-const AppointmentPage = () => {
+const AppointmentPage = ({ history }) => {
   const emailRegex = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
   const phoneRegex = /^[0-9]{10}$/;
   const [validPhone, setValidPhone] = useState(true);
@@ -13,11 +13,9 @@ const AppointmentPage = () => {
 
   return (
     <div className="appointment-content">
-      <Link to="/">
-        <div className="close-cross">
-          <img src={cross} alt="" />
-        </div>
-      </Link>
+      <div onClick={() => history.goBack()} className="close-cross">
+        <img src={cross} alt="" />
+      </div>
       <h1 style={{ display: sent ? 'none' : 'block' }}>let's talk</h1>
       <div className="line"></div>
       <div style={{ display: sent ? 'none' : 'block' }} className="form">

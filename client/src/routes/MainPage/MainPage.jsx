@@ -70,9 +70,11 @@ const MainPage = () => {
           We are waiting <br /> for you
         </h1>
         <h2>Leave a request and we will call you back right now</h2>
-        <button className="fourth-btn">
-          <h4 style={{ color: '#FAFAFA' }}>Get an appointment</h4>
-        </button>
+        <Link to="/appointment">
+          <button className="fourth-btn">
+            <h4 style={{ color: '#FAFAFA' }}>Get an appointment</h4>
+          </button>
+        </Link>
       </div>
       <div className="fifth-block">
         <h1>Reviews</h1>

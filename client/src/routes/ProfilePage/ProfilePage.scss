@@ -43,6 +43,7 @@
           background: transparent;
           border-bottom: 1px solid #e97477;
           width: 12vw;
+          color: white;
           &:focus {
             outline: none;
           }
@@ -106,10 +107,12 @@
           margin-top: 1vh;
           border-bottom: 2px solid #e97477;
         }
-        & > h4 {
-          color: #e97477;
-          text-transform: uppercase;
-          margin-top: 2vh;
+        & > a {
+          text-decoration: none;
+          & > h4 {
+            text-transform: uppercase;
+            margin-top: 2vh;
+          }
         }
       }
     }
