@@ -1,13 +1,14 @@
 .tattoo-block h4 {
-    color: rgba(233, 116, 119, 0.4);;
+    opacity: 0.5;
+    color: #E97477;
     float: right;
     margin-top: 8%;
     transition: 1s;
 }
 
 .tattoo-block h4:hover {
-    color: #E97477;
     cursor: pointer;
+    opacity: 1;
 }
 
 .tattoo-block:nth-child(odd) {
