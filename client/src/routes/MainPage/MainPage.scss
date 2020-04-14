@@ -98,22 +98,28 @@ figure img {
   text-align: center;
 }
 
-.fourth-block {
-  h1,
-  h2 {
-    //   margin-bottom: 2%;
-    margin-top: 0;
-  }
-  & > a {
-    margin-top: 4vh;
-  }
+.fourth-block h1,
+h2 {
+  margin-bottom: 2%;
+  margin-top: 0;
 }
 
 .fourth-btn {
   background: #e97477;
-  // padding: 20px 70px;
+  padding: 20px;
+  padding-left: 50px;
+  padding-right: 50px;
   border-radius: 3px;
+  height: auto;
+  width: auto;
   border: 0;
+  transition: 1s;
+}
+
+.fourth-btn:hover {
+  padding: 15px;
+  padding-left: 50px;
+  padding-right: 50px;
 }
 
 .fifth-block {

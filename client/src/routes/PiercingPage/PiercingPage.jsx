@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import Header from '../../components/Header/Header';
 import Footer from '../../components/Footer/Footer';
 
@@ -19,7 +20,7 @@ const PiercingPage = ({ history }) => {
           <img src={piercing_one_img} alt="" />
         </div>
         <div className="piercing-text">
-          <h4 onClick={() => history.goBack()}>
+          <h4 className="reset-btn" onClick={() => history.goBack()}>
             <img src={arrow_left} alt="" /> return
           </h4>
           <h1>Piercing</h1>
@@ -55,9 +56,11 @@ const PiercingPage = ({ history }) => {
             as soon as possible in order to avoid complications that will have
             to consult a doctor.
           </p>
-          <button className="piercing-btn">
-            <h4>get an appointment</h4>
-          </button>
+          <Link to="/appointment">
+            <button className="piercing-btn">
+              <h4>get an appointment</h4>
+            </button>
+          </Link>
           <img className="piercing-img-two" src={piercing_two_img} alt="" />
         </div>
       </div>

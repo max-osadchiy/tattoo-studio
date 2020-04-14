@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import Header from '../../components/Header/Header';
 import Footer from '../../components/Footer/Footer';
 
@@ -19,7 +20,7 @@ const PermanentMakeupPage = ({ history }) => {
           <img src={per_makeup_one_img} alt="" />
         </div>
         <div className="per-makeup-text">
-          <h4 onClick={() => history.goBack()}>
+          <h4 className="reset-btn" onClick={() => history.goBack()}>
             <img src={arrow_left} alt="" /> return
           </h4>
           <h1>Permanent makeup</h1>
@@ -53,9 +54,11 @@ const PermanentMakeupPage = ({ history }) => {
             beauty-span may be influenced by several possible factors, including
             environmental, procedural and/or individual factors.{' '}
           </p>
-          <button className="per-makeup-btn">
-            <h4>get an appointment</h4>
-          </button>
+          <Link to="/appointment">
+            <button className="per-makeup-btn">
+              <h4>get an appointment</h4>
+            </button>
+          </Link>
           <img className="per-makeup-img-two" src={per_makeup_two_img} alt="" />
         </div>
       </div>

@@ -9,13 +9,10 @@
   position: relative;
 }
 
-.tattoo-container h4 {
-  color: #e97477;
-}
-
-.tattoo-container > h2,
-.tattoo-container > h1 {
+.tattoo-container h2,
+h1 {
   margin-top: 7%;
+  margin-bottom: 0;
 }
 
 .tattoo-text {
@@ -39,7 +36,16 @@
   border: 2px solid rgba(233, 116, 119, 0.4);
   box-sizing: border-box;
   border-radius: 3px;
-  //   padding: 20px 60px;
+  padding: 20px 60px;
+  width: auto;
+  height: auto;
+  transition: 1s;
+}
+
+.tattoo-btn:hover {
+  background: #e97477;
+  color: #fafafa;
+  padding: 15px 50px;
 }
 
 .tattoo-btn h4 {

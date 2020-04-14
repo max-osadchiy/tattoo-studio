@@ -19,7 +19,7 @@ const TattooRemovalPage = ({ history }) => {
           <img src={tattoo_rem_one_img} alt="" />
         </div>
         <div className="tattoo-rem-text">
-          <h4 onClick={() => history.goBack()}>
+          <h4 className="reset-btn" onClick={() => history.goBack()}>
             <img src={arrow_left} alt="" /> return
           </h4>
           <h1>Piercing</h1>

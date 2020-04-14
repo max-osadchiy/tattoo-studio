@@ -1,11 +1,16 @@
 .appointment-content {
-  width: 100vw;
+  width: 80%;
+  margin: 0 10%;
   height: 100vh;
   display: flex;
   align-items: flex-start;
+  & > .close-cross {
+    margin: 30px;
+    margin-top: 40px;
+    cursor: pointer;
+  }
   & > h1 {
     text-transform: uppercase;
-    margin: 18vh 0 0 12vw;
   }
   & > .line {
     width: 12.5vw;
@@ -71,6 +76,7 @@
         border: 0;
         border-radius: 3px;
         color: white;
+        transition: 0.5s;
         &:hover {
           box-shadow: 0px 4px 20px rgba(233, 116, 119, 0.5);
         }
@@ -79,7 +85,8 @@
   }
 
   & > .thanks {
-    width: 100vw;
+    width: 80%;
+    margin: 0 10%;
     height: 100vh;
     display: flex;
     flex-direction: column;

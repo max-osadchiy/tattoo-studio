@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import Header from '../../components/Header/Header';
 import Footer from '../../components/Footer/Footer';
 
@@ -19,7 +20,7 @@ const TattooPage = ({ history }) => {
           <img src={tattoo_one_img} alt="" />
         </div>
         <div className="tattoo-text">
-          <h4 onClick={() => history.goBack()}>
+          <h4 className="reset-btn" onClick={() => history.goBack()}>
             <img src={arrow_left} alt="" /> return
           </h4>
           <h1>Tattoo</h1>
@@ -51,9 +52,11 @@ const TattooPage = ({ history }) => {
             breaks (in case you want to relax / have a bite / have a break)
             influence it.
           </p>
-          <button className="tattoo-btn">
-            <h4>get an appointment</h4>
-          </button>
+          <Link to="/appointment">
+            <button className="tattoo-btn">
+              <h4>get an appointment</h4>
+            </button>
+          </Link>
           <img className="tattoo-img-two" src={tattoo_two_img} alt="" />
         </div>
       </div>

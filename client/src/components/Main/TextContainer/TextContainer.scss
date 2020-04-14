@@ -13,15 +13,32 @@
 }
 
 .text-block-btn {
-  margin-top: 60px;
-  border: 2px solid #e97477;
-  box-sizing: border-box;
-  border-radius: 3px;
-  background: #0a0a0a;
-  width: 14vw;
+    margin-top: 60px;
+    border: 2px solid #E97477;
+    box-sizing: border-box;
+    border-radius: 3px;
+    background: #0A0A0A;
+    width: max-content;
+    height: auto;
+    transition: 1s;
+}
+
+.text-block-btn:hover {
+    background: #E97477;
+    color: #fafafa;
 }
 
 .text-block-btn h4 {
-  display: flex;
-  align-items: center;
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    padding-left: 50px;
+    padding-right: 50px;
+    transition: 1s;
+}
+
+.text-block-btn:hover h4 {
+    padding: 10px;
+    padding-left: 50px;
+    padding-right: 50px;
 }

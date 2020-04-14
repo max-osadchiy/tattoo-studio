@@ -148,7 +148,7 @@ const ProfilePage = () => {
                     .split(' ')[0]
                     .toLowerCase()}`}
                 >
-                  <h4>
+                  <h4 className="reset-btn">
                     Look more <img src={arrowRight} />
                   </h4>
                 </Link>
