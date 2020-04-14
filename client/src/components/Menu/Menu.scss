@@ -1,32 +1,63 @@
+.menu-component {
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.95);
+  position: absolute;
+  z-index: 1;
+}
+
 .menu-container {
-    width: 76%;
+  width: 76%;
+  display: flex;
+  flex-direction: row;
+  margin-left: 12%;
+  margin-right: 12%;
+  justify-content: space-between;
+  height: 97vh;
+  align-items: center;
+  & > div:first-child {
     display: flex;
-    flex-direction: row;
-    margin-left: 12%;
-    margin-right: 12%;
-    justify-content: space-between;
-    height: 97vh;
-    align-items: center;
-}
-
-.menu-component img {
-    position: absolute;
-    margin: 55px;
-}
-
-.menu-container h1 {
-    line-height: 2;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 84vh;
+    & ul {
+      margin-left: 8.8vw;
+      & > li {
+        margin: 1vh 0;
+      }
+    }
+  }
+  & .menu-item {
+    display: flex;
     cursor: pointer;
+    & > a {
+      color: white;
+    }
+    & > img {
+      margin-left: 4vw;
+    }
+    &.selected {
+      & h1::before {
+        content: '';
+        display: inline-block;
+        margin-right: 4vw;
+        width: 7vw;
+        height: 0;
+        border: 2px solid #e97477;
+      }
+    }
+  }
 }
 
-.menu-container ul {
-    margin-left: 170px;
+.menu-component > img {
+  position: absolute;
+  margin: 55px;
 }
 
 .dis-n {
-    display: none;
+  display: none;
 }
-            
+
 .dis-b {
-    display: block;
+  display: block;
 }
