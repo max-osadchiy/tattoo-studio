@@ -55,6 +55,7 @@ export const ArtistsProvider = ({ children }) => {
         'I have been working as a tattoo artist since 2012, I\n individually approach each project.',
         'I am inspired by nature, architecture, music and the world around us.',
       ],
+      link: '/about/andrey',
     },
     {
       id: 2,
@@ -69,6 +70,7 @@ export const ArtistsProvider = ({ children }) => {
         'It is interesting to embody ideas in which there are floral, animalistic, ornamental-geometric and Japanese motifs.',
         'Always open to innovative and experimental ideas, and I will gladly make you painful and beautiful.',
       ],
+      link: '/about/oleg',
     },
     {
       id: 3,
@@ -81,6 +83,7 @@ export const ArtistsProvider = ({ children }) => {
         'Always looking for extravagant ways to implement your ideas.',
         'In my works, the idea of ​​oxymoron is always present. In my projects, color parts and black and white colors are combined. A play of shadows and lights, this best describes my style - realism.',
       ],
+      link: '/about/anastasia',
     },
     {
       id: 4,
@@ -95,6 +98,7 @@ export const ArtistsProvider = ({ children }) => {
         'These are not the only areas that interest me.',
         'Most often I work on natural references.',
       ],
+      link: '/about/maria',
     },
   ]);
 

@@ -1,40 +1,41 @@
 .a-fourth-block {
-    position: relative;
-    width: 80%;
-    margin: 0 10%;
-    margin-bottom: 6%;
-    h1 {
-        margin-bottom: 3%;
-    }
+  position: relative;
+  width: 80%;
+  margin: 0 10%;
+  margin-bottom: 6%;
+  h1 {
+    margin-bottom: 3%;
+  }
 }
 
 .q-container {
-    padding: 2% 0;
-    border-top: 1px solid #E97477;
-    h2 {
-        margin-bottom: 0;
-        margin-top: 0;
-    }
+  padding: 2% 0;
+  border-top: 1px solid #e97477;
+  h2 {
+    margin-bottom: 0;
+    margin-top: 0;
+  }
 }
 
 .q-container:last-child {
-    border-bottom: 1px solid #E97477;
+  border-bottom: 1px solid #e97477;
 }
 
 .faq-container {
-    span {
-        display: none;
-    }
+  span > p {
+    margin-left: 10%;
+    width: 50%;
+  }
 }
 
 .q-title {
-    display: flex;
-    justify-content: space-between;
-    margin: 0 10%;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 10%;
 }
 
 .a-high-number-four {
-    position: absolute;
-    left: -50px;
-    top: -90px;
+  position: absolute;
+  left: -50px;
+  top: -90px;
 }

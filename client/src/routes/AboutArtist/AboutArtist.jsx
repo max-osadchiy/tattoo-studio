@@ -3,7 +3,6 @@ import { useParams } from 'react-router-dom';
 import { ArtistsContext } from '../../contexts/ArtistsContext';
 import { Link } from 'react-router-dom';
 import Header from '../../components/Header/Header';
-import andr from '../../img/About/Andrey.jpg';
 
 import andr1 from '../../img/Tattoo artist/Andrey/Andrey1.jpg';
 import andr2 from '../../img/Tattoo artist/Andrey/Andrey2.jpg';
