@@ -15,6 +15,7 @@ const AboutPage = () => {
   return (
     <div className="about-page">
       <UploadTattoo view={upload} setView={setUpload} />
+      <div className="vert-line"></div>
       <Header />
       <FirstBlock />
       <SecondBlock />
