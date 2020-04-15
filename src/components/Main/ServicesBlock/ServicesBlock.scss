@@ -1,0 +1,36 @@
+.tattoo-block h4 {
+    opacity: 0.5;
+    color: #E97477;
+    float: right;
+    margin-top: 8%;
+    transition: 1s;
+}
+
+.tattoo-block h4:hover {
+    cursor: pointer;
+    opacity: 1;
+}
+
+.tattoo-block:nth-child(odd) {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 5%;
+    justify-content: space-between;
+    
+    .tattoo-text {
+        margin-right: 15%;
+    }
+} 
+        
+.tattoo-block:nth-child(even) {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    margin-top: 5%;
+    justify-content: space-between;
+
+    .tattoo-text {
+        margin-left: 15%;
+    }
+} 

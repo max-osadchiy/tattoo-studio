@@ -1,0 +1,58 @@
+.tattoo-header {
+  height: 14vh;
+}
+
+.tattoo-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  position: relative;
+  margin-top: 2vh;
+}
+
+.tattoo-container h2,
+h1 {
+  margin-top: 7%;
+  margin-bottom: 0;
+}
+
+.tattoo-text {
+  width: 30%;
+  margin-left: 3%;
+  margin-right: 29%;
+  & > .reset-btn {
+    margin: 0;
+    &:hover {
+      opacity: 1;
+      cursor: pointer;
+    }
+  }
+}
+
+.tattoo-img-two {
+  position: absolute;
+  right: 65px;
+  bottom: 65px;
+}
+
+.tattoo-btn {
+  margin-top: 7%;
+}
+
+.tattoo-btn h4 {
+  color: #fafafa;
+}
+
+.footer {
+  margin-top: 0;
+}
+
+.tattoo-first::after {
+  content: ' is a form of body modification where a design';
+}
+.tattoo-second::after {
+  content: ' use clinically approved materials';
+}
+.tattoo-third::after {
+  content: ' is determined';
+}

@@ -1,0 +1,67 @@
+.piercing-header {
+  height: 14vh;
+}
+
+.piercing-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  position: relative;
+  margin-top: 2vh;
+}
+
+.piercing-container h4 {
+  color: #e97477;
+}
+
+.piercing-container > h2,
+.piercing-container > h1 {
+  margin-top: 7%;
+  margin-bottom: 0;
+}
+
+.piercing-text {
+  width: 30%;
+  margin-left: 3%;
+  margin-right: 29%;
+  & > h4:hover {
+    cursor: pointer;
+  }
+}
+
+.piercing-img-two {
+  position: absolute;
+  right: 65px;
+  bottom: 65px;
+}
+
+.piercing-btn {
+  margin-top: 7%;
+}
+
+.piercing-btn h4 {
+  color: #fafafa;
+}
+
+.footer {
+  margin-top: 0;
+}
+
+.h2-to-p {
+  &::after {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    align-items: center;
+  }
+}
+
+.piercing-first::after {
+  content: ', a form of body modification, is the practice of';
+}
+
+.piercing-second::after {
+  content: ' is individual and depends on the';
+}

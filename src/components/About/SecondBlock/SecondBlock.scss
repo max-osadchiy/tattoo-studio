@@ -1,0 +1,39 @@
+.second-block {
+    margin: 7% 8%;
+    width: 84%;
+    position: relative;
+}
+
+.a-high-number-two {
+    position: absolute;
+    left: -50px;
+    top: -90px;
+}
+
+.second-title h1 {
+    margin-bottom: 3%;
+}
+
+.artists-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    img {
+        margin-bottom: 4%;
+    }
+
+    p {
+        margin-bottom: 3%;
+    }
+
+    a {
+        color: #E97477;
+        opacity: .5;
+        transition: .5s;
+
+        &:hover {
+            opacity: 1;
+        }
+    }
+}

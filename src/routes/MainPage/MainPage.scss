@@ -1,0 +1,132 @@
+figure {
+  overflow: hidden;
+}
+
+figure img {
+  margin-right: -5.5%;
+}
+
+.wrapper {
+  margin-left: 70px;
+  margin-right: 70px;
+}
+
+.img-one {
+  float: right;
+  height: 100vh;
+}
+
+.swipe-img {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  bottom: 40px;
+}
+
+.high-number {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 200px;
+  line-height: 234px;
+  color: rgba(233, 116, 119, 0.1);
+}
+
+.high-number-one {
+  position: absolute;
+  left: 165px;
+  top: 205px;
+}
+
+.high-number-two {
+  position: absolute;
+  top: -99px;
+  left: -44px;
+}
+
+.high-number-three {
+  position: absolute;
+  bottom: 118px;
+  left: -46px;
+}
+
+.high-number-four {
+  position: absolute;
+  left: -60px;
+  top: -105px;
+}
+
+.first-block {
+  position: relative;
+}
+
+.second-block {
+  position: relative;
+  width: 76%;
+  margin-top: 120px;
+  margin-left: 12%;
+  margin-right: 12%;
+}
+
+.third-block {
+  position: relative;
+  width: 76%;
+  margin-top: 120px;
+  margin-left: 12%;
+  margin-right: 12%;
+}
+
+.skill-block {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 4%;
+  margin-bottom: 8%;
+}
+
+.fourth-block {
+  background: url('../../img/Main/6img.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  width: 100%;
+  height: 550px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.fourth-block h1,
+h2 {
+  margin-bottom: 2%;
+  margin-top: 0;
+}
+
+.fifth-block {
+  position: relative;
+  width: 76%;
+  margin-top: 120px;
+  margin-left: 12%;
+  margin-right: 12%;
+  margin-bottom: 100px;
+}
+
+.reviews-container {
+  margin-top: 5%;
+  text-align: center;
+  align-items: center;
+  margin-bottom: 5%;
+}
+
+.shadow-block {
+  height: 439px;
+  align-items: center;
+  position: absolute;
+  width: 31%;
+  margin-left: 36.5%;
+  bottom: -1px;
+  display: flex;
+  box-shadow: 0px 12px 50px rgba(233, 116, 119, 0.25);
+}

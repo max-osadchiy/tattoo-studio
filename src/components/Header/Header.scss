@@ -1,0 +1,36 @@
+.Header {
+  display: flex;
+  position: absolute;
+  height: 8vh;
+  z-index: 2;
+  width: 100%;
+  justify-content: space-between;
+  & > a {
+    cursor: pointer;
+  }
+}
+
+.row {
+  padding: 4vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100vw;
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  transition: 1s;
+  &:hover {
+    align-items: flex-end;
+  }
+}
+
+.phone-num {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}

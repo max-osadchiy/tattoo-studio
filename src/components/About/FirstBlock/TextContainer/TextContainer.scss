@@ -1,0 +1,43 @@
+.a-text-container {
+    top: 0;
+    bottom: 0;
+    left: 175px;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 35%;
+}
+
+.a-high-number-one {
+  position: absolute;
+  left: -60px;
+  top: 266px;
+}
+
+.a-text-container p {
+  margin-bottom: 3%;
+}
+
+.a-text-container h1 {
+  margin-bottom: 6%;
+}
+
+.h2-to-p {
+    margin-bottom: 0;
+    &::after {
+      font-family: 'Raleway';
+      font-style: normal;
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 19px;
+      align-items: center;
+    }
+}
+
+.a-first-text::after {
+        content: ' offers professional services of art tattoo,';
+}
+.a-second-text::after {
+        content: ' the session to be as comfortable and painless as possible for';
+}

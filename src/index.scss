@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap');
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden !important;
+}
+
+body {
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: #0a0a0a;
+  color: #fafafa;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: Roboto;
+  font-style: normal;
+}
+
+h1 {
+  font-weight: bold;
+  font-size: 60px;
+  line-height: 70px;
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 42px;
+  color: #fafafa;
+}
+
+h3 {
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 28px;
+  color: #c4c4c4;
+}
+
+h4 {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 19px;
+  text-transform: uppercase;
+  color: #fafafa;
+}
+
+p {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.04em;
+}
+
+a {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 19px;
+  text-transform: uppercase;
+  color: #fafafa;
+}
+
+.reset-btn {
+  color: #e97477;
+  opacity: 0.5;
+  transition: 1s;
+}
+
+.reset-btn:hover {
+  opacity: 1;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.black-btn {
+  border: 2px solid rgba(233, 116, 119, 0.4);
+  box-sizing: border-box;
+  border-radius: 3px;
+  background: #0a0a0a;
+  width: 15vw;
+  height: 4.9vh;
+  transition: 1s;
+  & > h4 {
+    display: flex;
+    align-items: center;
+    padding: 1.3vh 2.6vw;
+    transition: 1s;
+  }
+  &:hover {
+    border: 2px solid #e97477;
+  }
+}
+
+.red-btn {
+  background: #e97477;
+  box-sizing: border-box;
+  border-radius: 3px;
+  width: 15vw;
+  height: auto;
+  border: 0;
+  transition: 1s;
+  padding: 1.3vh 2.6vw;
+  color: #fafafa;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+  & > h4 {
+    display: flex;
+    align-items: center;
+    transition: 1s;
+  }
+  &.red-btn:hover {
+    box-shadow: 0px 4px 20px rgba(233, 116, 119, 0.5);
+  }
+}
+
+h4 {
+  margin: 0;
+}

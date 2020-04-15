@@ -1,0 +1,65 @@
+.tattoo-rem-header {
+  height: 14vh;
+}
+
+.tattoo-rem-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  position: relative;
+  margin-top: 2vh;
+}
+
+.tattoo-rem-container h4 {
+  color: #e97477;
+}
+
+.tattoo-rem-container > h2,
+.tattoo-rem-container > h1 {
+  margin-top: 7%;
+  margin-bottom: 0;
+}
+
+.tattoo-rem-text {
+  width: 60%;
+  margin-left: 3%;
+  margin-right: 19%;
+  & > h4:hover {
+    cursor: pointer;
+  }
+}
+
+.tattoo-rem-img-two {
+  position: absolute;
+  right: 65px;
+  bottom: 65px;
+}
+
+.tattoo-rem-btn {
+  margin-top: 7%;
+}
+
+.tattoo-rem-btn h4 {
+  color: #fafafa;
+}
+
+.footer {
+  margin-top: 0;
+}
+
+.removal-first::after {
+  content: ' has been performed with various tools since the start of tattooing.';
+}
+.removal-second::after {
+  content: ' is individual and depends on your goal: remove';
+}
+.removal-third::after {
+  content: ' , namely shades of red, yellow and green colors, are less perceived';
+}
+.removal-fourth::after {
+  content: ' of the procedure is from 5 to 30 minutes, depending on the size of the';
+}
+
+a {
+  text-decoration: none;
+}

@@ -1,0 +1,16 @@
+.text-block {
+  top: 0;
+  bottom: 0;
+  left: 230px;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  & > button {
+    margin-top: 60px;
+  }
+}
+
+.text-block p {
+  margin-top: 8px;
+}
