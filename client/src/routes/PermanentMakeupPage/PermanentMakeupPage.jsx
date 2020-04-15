@@ -55,7 +55,7 @@ const PermanentMakeupPage = ({ history }) => {
             environmental, procedural and/or individual factors.{' '}
           </p>
           <Link to="/appointment">
-            <button className="per-makeup-btn">
+            <button className="per-makeup-btn black-btn">
               <h4>get an appointment</h4>
             </button>
           </Link>

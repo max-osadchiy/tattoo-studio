@@ -26,7 +26,7 @@ const ThirdBlock = ({ upload, setUpload }) => {
         execution and the quality of work.
       </p>
       <Link to="/profile">
-        <button>
+        <button className="black-btn">
           <h4>Upload tattoo +</h4>
         </button>
       </Link>

@@ -57,7 +57,7 @@ const PiercingPage = ({ history }) => {
             to consult a doctor.
           </p>
           <Link to="/appointment">
-            <button className="piercing-btn">
+            <button className="piercing-btn black-btn">
               <h4>get an appointment</h4>
             </button>
           </Link>

@@ -56,11 +56,11 @@ const TattooRemovalPage = ({ history }) => {
             cases, a crust appears on this area, which in no case can be
             scratched or peeled.
           </p>
-          <button className="tattoo-rem-btn">
-            <Link to="/appointment">
+          <Link to="/appointment">
+            <button className="tattoo-rem-btn black-btn">
               <h4>get an appointment</h4>
-            </Link>
-          </button>
+            </button>
+          </Link>
         </div>
       </div>
       <div className="tattoo-rem-footer">

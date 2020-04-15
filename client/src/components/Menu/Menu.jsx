@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { HashLink as Link } from 'react-router-hash-link';
 
 import './Menu.scss';
 import cross from '../../img/cross.svg';
@@ -8,7 +8,6 @@ import arrDown from '../../img/arr-down.svg';
 import arrUp from '../../img/arr-up.svg';
 
 const Menu = ({ show, setShow }) => {
-
   const [showFirst, setShowFirst] = useState(
     new RegExp(/(tattoo|piercing|tattoo-removal|permanent-makeup)/).test(
       window.location.pathname
@@ -140,7 +139,7 @@ const Menu = ({ show, setShow }) => {
           </span>
 
           <div className="menu-item">
-            <Link onClick={() => setShow(!show)} to="/about">
+            <Link onClick={() => setShow(!show)} to="/about#faq">
               <h1>FAQ</h1>
             </Link>
           </div>

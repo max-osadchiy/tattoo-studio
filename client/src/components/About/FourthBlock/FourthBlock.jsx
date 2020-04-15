@@ -8,7 +8,7 @@ const FourthBlock = () => {
   const [show, setShow] = useState(0);
 
   return (
-    <div className="a-fourth-block">
+    <div id="faq" className="a-fourth-block">
       <span className="high-number a-high-number-four">4</span>
       <h1>FAQ</h1>
       <div className="faq-container">

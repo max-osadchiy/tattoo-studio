@@ -53,7 +53,7 @@ const TattooPage = ({ history }) => {
             influence it.
           </p>
           <Link to="/appointment">
-            <button className="tattoo-btn">
+            <button className="tattoo-btn black-btn">
               <h4>get an appointment</h4>
             </button>
           </Link>

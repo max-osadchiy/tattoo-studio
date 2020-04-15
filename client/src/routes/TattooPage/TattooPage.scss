@@ -7,6 +7,7 @@
   flex-direction: row;
   justify-content: center;
   position: relative;
+  margin-top: 2vh;
 }
 
 .tattoo-container h2,
@@ -19,8 +20,12 @@ h1 {
   width: 30%;
   margin-left: 3%;
   margin-right: 29%;
-  & > h4:hover {
-    cursor: pointer;
+  & > .reset-btn {
+    margin: 0;
+    &:hover {
+      opacity: 1;
+      cursor: pointer;
+    }
   }
 }
 
@@ -32,20 +37,6 @@ h1 {
 
 .tattoo-btn {
   margin-top: 7%;
-  background: #0a0a0a;
-  border: 2px solid rgba(233, 116, 119, 0.4);
-  box-sizing: border-box;
-  border-radius: 3px;
-  padding: 20px 60px;
-  width: auto;
-  height: auto;
-  transition: 1s;
-}
-
-.tattoo-btn:hover {
-  background: #e97477;
-  color: #fafafa;
-  padding: 15px 50px;
 }
 
 .tattoo-btn h4 {

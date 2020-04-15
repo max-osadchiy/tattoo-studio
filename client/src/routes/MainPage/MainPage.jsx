@@ -71,7 +71,7 @@ const MainPage = () => {
         </h1>
         <h2>Leave a request and we will call you back right now</h2>
         <Link to="/appointment">
-          <button className="fourth-btn">
+          <button className="red-btn">
             <h4 style={{ color: '#FAFAFA' }}>Get an appointment</h4>
           </button>
         </Link>

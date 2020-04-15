@@ -7,6 +7,7 @@
   flex-direction: row;
   justify-content: center;
   position: relative;
+  margin-top: 2vh;
 }
 
 .piercing-container h4 {
@@ -36,20 +37,6 @@
 
 .piercing-btn {
   margin-top: 7%;
-  background: #0a0a0a;
-  border: 2px solid rgba(233, 116, 119, 0.4);
-  box-sizing: border-box;
-  border-radius: 3px;
-  padding: 20px 60px;
-  width: auto;
-  height: auto;
-  transition: 1s;
-}
-
-.piercing-btn:hover {
-  background: #E97477;
-  color: #fafafa;
-  padding: 15px 50px;
 }
 
 .piercing-btn h4 {

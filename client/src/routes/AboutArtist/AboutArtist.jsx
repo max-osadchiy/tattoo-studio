@@ -35,8 +35,11 @@ const AboutArtist = () => {
               <p key={id}>{quote}</p>
             ))}
             <a>
-              <button onClick={() => (window.location.hash = '#photos')}>
-                See works
+              <button
+                className="black-btn"
+                onClick={() => (window.location.hash = '#photos')}
+              >
+                <h4>See works</h4>
               </button>
             </a>
           </div>
@@ -59,15 +62,18 @@ const AboutArtist = () => {
               <p key={id}>{quote}</p>
             ))}
             <a>
-              <button onClick={() => (window.location.hash = '#photos')}>
-                See works
+              <button
+                className="black-btn"
+                onClick={() => (window.location.hash = '#photos')}
+              >
+                <h4>See works</h4>
               </button>
             </a>
           </div>
         </div>
       )}
       <div id="photos" className="about-works">
-        <h1>Andrew's works</h1>
+        <h1>{artist.name.split(' ')[0]}'s works</h1>
         <div className="about-photos">
           {artist.works.map((img, id) => (
             <img key={id} src={img} />
@@ -75,7 +81,9 @@ const AboutArtist = () => {
         </div>
         <div className="app-btn">
           <Link to="/appointment">
-            <button className="right-btn">Get an appointment</button>
+            <button className="black-btn">
+              <h4>Get an appointment</h4>
+            </button>
           </Link>
         </div>
       </div>
