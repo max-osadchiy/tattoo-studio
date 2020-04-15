@@ -12,6 +12,8 @@ import TattooRemovalPage from './routes/TattooRemovalPage/TattooRemovalPage';
 import PermanentMakeupPage from './routes/PermanentMakeupPage/PermanentMakeupPage';
 import AboutArtist from './routes/AboutArtist/AboutArtist';
 
+import './index.scss';
+
 const App = () => {
   useEffect(() => {
     const _onInit = (auth2) => {
