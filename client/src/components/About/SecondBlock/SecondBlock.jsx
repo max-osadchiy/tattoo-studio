@@ -9,6 +9,7 @@ const SecondBlock = () => {
             <div className="second-title">
                 <h1>Tattoo Artists</h1>
             </div>
+            <span className="high-number a-high-number-two">2</span>
             <div className="artists-container">
                 <ArtistsContainer />
             </div>

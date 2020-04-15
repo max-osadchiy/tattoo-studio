@@ -5,6 +5,7 @@ import './TextContainer.scss'
 const TextContainer = () => {
     return (
         <div className="a-text-container">
+            <span className="high-number a-high-number-one">1</span>
             <h1>About Us</h1>
             <h2 className="h2-to-p a-first-text">Street Tattoo Studio</h2>
             <p>piercing. We are focused on a high-quality result, and therefore we have selected a team of professionals for you. Our studio uses only the best, modern equipment and supplies.</p>

@@ -8,14 +8,6 @@ import arrDown from '../../img/arr-down.svg';
 import arrUp from '../../img/arr-up.svg';
 
 const Menu = ({ show, setShow }) => {
-  // const show_service = (id) => {
-  //     if ("show_service") document.getElementById("show_service").className = 'dis-n'
-  //     document.getElementById("show_service").className = 'dis-b'
-  //     return id
-  // }
-
-  // const show_artist = () => {
-  // }
 
   const [showFirst, setShowFirst] = useState(
     new RegExp(/(tattoo|piercing|tattoo-removal|permanent-makeup)/).test(
