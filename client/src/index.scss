@@ -89,7 +89,7 @@ code {
     monospace;
 }
 
-button.black-btn {
+.black-btn {
   border: 2px solid rgba(233, 116, 119, 0.4);
   box-sizing: border-box;
   border-radius: 3px;
@@ -97,18 +97,18 @@ button.black-btn {
   width: 15vw;
   height: 4.9vh;
   transition: 1s;
-  &.black-btn:hover {
-    background: 2px solid #e97477;
-  }
   & > h4 {
     display: flex;
     align-items: center;
     padding: 1.3vh 2.6vw;
     transition: 1s;
   }
+  &:hover {
+    border: 2px solid #e97477;
+  }
 }
 
-button.red-btn {
+.red-btn {
   background: #e97477;
   box-sizing: border-box;
   border-radius: 3px;

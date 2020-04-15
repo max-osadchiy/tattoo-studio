@@ -93,7 +93,9 @@ const ProfilePage = () => {
               </div>
               <div>
                 <h3>&nbsp;</h3>
-                <button onClick={changeInfo}>Edit</button>
+                <button className="black-btn" onClick={changeInfo}>
+                  <h4>Edit</h4>
+                </button>
               </div>
               <div className="br">
                 <h3>Last session</h3>
@@ -170,11 +172,15 @@ const ProfilePage = () => {
         </div>
         <div className="buttons">
           <div className="lower-btn">
-            <button onClick={() => setUpload(!upload)}>Upload tattoo +</button>
+            <button className="black-btn" onClick={() => setUpload(!upload)}>
+              <h4>Upload tattoo +</h4>
+            </button>
           </div>
           <div className="lower-btn right">
             <Link to="appointment">
-              <button className="right-btn">Get an appointment</button>
+              <button className="right-btn red-btn">
+                <h4>Get an appointment</h4>
+              </button>
             </Link>
           </div>
         </div>
