@@ -16,6 +16,7 @@ const Menu = ({ show, setShow }) => {
   const [showSecond, setShowSecond] = useState(
     new RegExp('/about/').test(window.location.pathname)
   );
+  const [showPopup, setShowPopup] = useState(0);
 
   return (
     <div
@@ -55,21 +56,21 @@ const Menu = ({ show, setShow }) => {
                 ? 'menu-item selected'
                 : 'menu-item'
             }
-            onClick={() => setShowFirst(!showFirst)}
+            onClick={() => setShowPopup(1)}
           >
             <h1>Services</h1>
             <img
-              style={{ display: showFirst ? 'none' : 'block' }}
+              style={{ display: showPopup === 1 ? 'none' : 'block' }}
               src={arrDown}
               alt="arrow-down"
             />
             <img
-              style={{ display: showFirst ? 'block' : 'none' }}
+              style={{ display: showPopup === 1 ? 'block' : 'none' }}
               src={arrUp}
               alt="arrow-up"
             />
           </div>
-          <span style={{ display: showFirst ? 'block' : 'none' }}>
+          <span style={{ display: showPopup === 1 ? 'block' : 'none' }}>
             <ul>
               <Link onClick={() => setShow(!show)} to="/tattoo">
                 <li>
@@ -99,21 +100,21 @@ const Menu = ({ show, setShow }) => {
                 ? 'menu-item selected'
                 : 'menu-item'
             }
-            onClick={() => setShowSecond(!showSecond)}
+            onClick={() => setShowPopup(2)}
           >
             <h1>Tattoo Artists</h1>
             <img
-              style={{ display: showSecond ? 'none' : 'block' }}
+              style={{ display: showPopup === 2 ? 'none' : 'block' }}
               src={arrDown}
               alt="arrow-down"
             />
             <img
-              style={{ display: showSecond ? 'block' : 'none' }}
+              style={{ display: showPopup === 2 ? 'block' : 'none' }}
               src={arrUp}
               alt="arrow-up"
             />
           </div>
-          <span style={{ display: showSecond ? 'block' : 'none' }}>
+          <span style={{ display: showPopup === 2 ? 'block' : 'none' }}>
             <ul>
               <Link onClick={() => setShow(!show)} to="/about/andrey">
                 <li>

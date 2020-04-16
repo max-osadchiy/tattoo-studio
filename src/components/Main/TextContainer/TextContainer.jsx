@@ -1,6 +1,7 @@
 import React from 'react';
 
 import './TextContainer.scss';
+import { Link } from 'react-router-dom';
 
 const TextContainer = () => {
   return (
@@ -15,9 +16,11 @@ const TextContainer = () => {
         can get great body art and leave like one of the <br />
         family
       </p>
-      <button className="black-btn">
-        <h4>read more</h4>
-      </button>
+      <Link to="/about">
+        <button className="black-btn">
+          <h4>read more</h4>
+        </button>
+      </Link>
     </div>
   );
 };

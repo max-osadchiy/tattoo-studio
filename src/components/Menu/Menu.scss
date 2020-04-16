@@ -27,6 +27,9 @@
       }
     }
   }
+  & > div:last-child {
+    width: 20vw;
+  }
   & .menu-item {
     display: flex;
     cursor: pointer;
