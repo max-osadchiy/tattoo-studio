@@ -14,10 +14,12 @@
   & > .contacts {
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
     & > div {
       display: flex;
-      justify-content: space-between;
+      justify-content: space-evenly;
+      h4 {
+        line-height: 2;
+      }
       & > div {
         margin-right: 1.5vw;
       }

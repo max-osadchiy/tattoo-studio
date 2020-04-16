@@ -44,19 +44,6 @@ const ReviewsContainer = () => {
 
     ]
 
-    // const arrow_left = (
-    //     <div>
-    //         <img src={arrowLeft} alt=""/>
-    //     </div>
-    // )
-    
-
-    // const arrow_right = (
-    //     <div>
-    //         <img src={arrowRight} alt=""/>
-    //     </div>
-    // )
-
     const settings = {
         dots: true,
         infinite: true,
@@ -67,8 +54,6 @@ const ReviewsContainer = () => {
         autoplaySpeed: 3000,
         cssEase: "linear",
         arrows: false,
-        // prevArrow: arrow_left,
-        // nextArrow: arrow_right,
     }
 
     return (
