@@ -18,6 +18,7 @@ const SecondBlock = () => {
           <div>
             <img
               width="321px"
+              className="artist-image"
               height="321px"
               src={artist.photoCropped}
               alt=""

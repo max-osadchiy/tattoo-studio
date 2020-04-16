@@ -1,4 +1,5 @@
 import React from 'react';
+import { HashLink as Link } from 'react-router-hash-link';
 
 import './TextContainer.scss';
 
@@ -16,7 +17,9 @@ const TextContainer = () => {
         family
       </p>
       <button className="black-btn">
-        <h4>read more</h4>
+        <Link to="/about">
+          <h4>read more</h4>
+        </Link>
       </button>
     </div>
   );

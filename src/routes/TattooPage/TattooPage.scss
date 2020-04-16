@@ -5,9 +5,15 @@
 .tattoo-container {
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-between;
   position: relative;
   margin-top: 2vh;
+  & > div:first-child {
+    width: 46%;
+    & > img {
+      width: 100%;
+    }
+  }
 }
 
 .tattoo-container h2,
@@ -33,6 +39,9 @@ h1 {
   position: absolute;
   right: 65px;
   bottom: 65px;
+  @media screen and (max-width: 1440px) and (max-height: 900px) {
+    width: 20%;
+  }
 }
 
 .tattoo-btn {

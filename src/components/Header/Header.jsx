@@ -18,7 +18,7 @@ const Header = () => {
       const profile = googleUser.getBasicProfile();
       localStorage.setItem('name', profile.getName());
       localStorage.setItem('email', profile.getEmail());
-      window.location.reload();
+      window.location.replace('/');
     });
   };
   const signOut = () => {

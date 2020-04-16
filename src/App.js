@@ -25,7 +25,8 @@ const App = () => {
     window.gapi.load('auth2', function () {
       window.gapi.auth2
         .init({
-          client_id: process.env.REACT_APP_GOOGLE_CLIENT_ID,
+          client_id:
+            '590123605848-2jk2e3bbi1dsddb0dv2qthc69cbu041u.apps.googleusercontent.com',
         })
         .then(_onInit, _onError);
     });
