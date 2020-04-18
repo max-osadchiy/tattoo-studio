@@ -7,7 +7,13 @@
   flex-direction: row;
   justify-content: center;
   position: relative;
-  margin-top: 2vh;
+  margin: 2vh 0;
+  & > div:first-child {
+    width: 50vw;
+    & > img {
+      width: 100%;
+    }
+  }
 }
 
 .per-makeup-container h4 {
@@ -31,6 +37,9 @@
 
 .per-makeup-img-two {
   position: absolute;
+  @media screen and (max-width: 1440px) and (max-height: 900px) {
+    width: 20vw;
+  }
   right: 65px;
   bottom: 65px;
 }

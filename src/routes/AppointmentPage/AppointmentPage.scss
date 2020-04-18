@@ -9,6 +9,9 @@
     margin-top: 40px;
     cursor: pointer;
   }
+  & > img {
+    margin: 4% 8% 0 -4%;
+  }
   & > h1 {
     text-transform: uppercase;
   }

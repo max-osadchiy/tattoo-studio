@@ -7,7 +7,7 @@
   flex-direction: row;
   justify-content: center;
   position: relative;
-  margin-top: 2vh;
+  margin: 2vh 0;
 }
 
 .tattoo-rem-container h4 {
@@ -31,6 +31,9 @@
 
 .tattoo-rem-img-two {
   position: absolute;
+  @media screen and (max-width: 1440px) and (max-height: 900px) {
+    width: 20vw;
+  }
   right: 65px;
   bottom: 65px;
 }

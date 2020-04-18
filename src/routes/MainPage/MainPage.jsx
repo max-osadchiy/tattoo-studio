@@ -16,17 +16,18 @@ import './MainPage.scss';
 const MainPage = () => {
   return (
     <div>
+      <div className="vert-line"></div>
       <div className="first-block">
         <Header />
         <figure>
           <img className="img-one" src={imgOne} alt="img" />
         </figure>
         <span className="high-number high-number-one">1</span>
-        <img
+        {/* <img
           style={{ position: 'absolute', left: '530px', top: 0 }}
           src={rect}
           alt=""
-        />
+        /> */}
         <div>
           <img className="swipe-img" src={swipe} alt="" />
         </div>
@@ -37,7 +38,7 @@ const MainPage = () => {
         <h1>Services</h1>
         <span className="high-number high-number-two">2</span>
         <ServicesBlock />
-        <img
+        {/* <img
           style={{ position: 'absolute', left: '-5px', top: '338px' }}
           src={rect}
           alt=""
@@ -56,7 +57,7 @@ const MainPage = () => {
           style={{ position: 'absolute', right: '-24px', top: '600px' }}
           src={rect}
           alt=""
-        />
+        /> */}
       </div>
       <div className="third-block">
         <h1>Our Advantages</h1>

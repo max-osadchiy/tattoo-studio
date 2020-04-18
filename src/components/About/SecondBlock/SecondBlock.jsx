@@ -22,6 +22,7 @@ const SecondBlock = () => {
               height="321px"
               src={artist.photoCropped}
               alt=""
+              className="avatar-img"
             />
             <div
               style={{

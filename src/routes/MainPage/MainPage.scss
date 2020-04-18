@@ -4,6 +4,13 @@ figure {
 
 figure img {
   margin-right: -5.5%;
+  }
+
+
+@media screen and (max-width: 1440px) and (max-height: 900px) {
+  figure img {
+    margin-right: -29.5%;
+  }
 }
 
 .wrapper {
@@ -129,4 +136,10 @@ h2 {
   bottom: -1px;
   display: flex;
   box-shadow: 0px 12px 50px rgba(233, 116, 119, 0.25);
+}
+
+@media screen and (max-width: 1440px) and (max-height: 900px) {
+  .shadow-block {
+    width: 33%;
+  }
 }

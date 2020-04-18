@@ -114,6 +114,7 @@ code {
   box-sizing: border-box;
   border-radius: 3px;
   width: max-content;
+  height: auto;
   border: 0;
   transition: 1s;
   padding: 1.3vh 2.6vw;
@@ -124,6 +125,7 @@ code {
   text-transform: uppercase;
   & > h4,
   & > a > h4 {
+    width: max-content;
     display: flex;
     align-items: center;
     transition: 1s;

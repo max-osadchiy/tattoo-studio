@@ -15,6 +15,12 @@
   top: 266px;
 }
 
+@media screen and (max-width: 1440px) and (max-height: 900px) {
+  .a-high-number-one {
+    top: 124px
+  }
+}
+
 .a-text-container p {
   margin-bottom: 3%;
 }
