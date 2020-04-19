@@ -1,10 +1,8 @@
 import React, { useContext, useState } from 'react';
 import { Link } from 'react-router-dom';
 
-import Header from '../../components/Header/Header';
 import { ArtistsContext } from '../../contexts/ArtistsContext';
 import UploadTattoo from '../../components/UploadTattoo/UploadTattoo';
-import Footer from '../../components/Footer/Footer';
 import calendarImage from '../../img/calendar.svg';
 import arrowDown from '../../img/arr-down.svg';
 import arrowUp from '../../img/arr-up.svg';
@@ -38,9 +36,6 @@ const ProfilePage = () => {
   return (
     <div>
       <UploadTattoo view={upload} setView={setUpload} />
-      <div className="profile-header">
-        <Header />
-      </div>
       <div className="profile-content">
         <div className="profile-caption">
           <h1>welcome to your profile!;)</h1>
@@ -184,9 +179,6 @@ const ProfilePage = () => {
             </Link>
           </div>
         </div>
-      </div>
-      <div className="profile-footer">
-        <Footer />
       </div>
     </div>
   );

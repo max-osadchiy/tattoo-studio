@@ -5,10 +5,13 @@
     width: 100%;
 }
 
-.a-first-block img {
-    height: 100vh;
-}
-
 .a-img-container {
-    float: right;
+    background: url(../../../img/about-img.svg);
+    height: 100vh;
+    width: 60%;
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    top: 0;
+    right:0;
 }

@@ -1,13 +1,10 @@
-.per-makeup-header {
-  height: 14vh;
-}
-
 .per-makeup-container {
   display: flex;
   flex-direction: row;
   justify-content: center;
   position: relative;
   margin: 2vh 0;
+  padding-top: 10%;
   & > div:first-child {
     width: 50vw;
     & > img {

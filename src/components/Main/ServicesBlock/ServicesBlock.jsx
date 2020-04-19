@@ -49,7 +49,7 @@ const ServicesBlock = () => {
       <div className="tattoo-img">
         <img src={event.img} alt="" />
       </div>
-      <div className="tattoo-text">
+      <div className="m-tattoo-text">
         <h2>{event.name}</h2>
         <p style={{ marginTop: '5%' }}>
           {event.discription_1}

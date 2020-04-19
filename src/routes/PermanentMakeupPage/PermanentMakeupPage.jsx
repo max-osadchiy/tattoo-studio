@@ -1,7 +1,5 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import Header from '../../components/Header/Header';
-import Footer from '../../components/Footer/Footer';
 
 import './PermanentMakeupPage.scss';
 import per_makeup_one_img from '../../img/per-makeup-one.svg';
@@ -12,9 +10,6 @@ import line_tattoo from '../../img/line-tattoo.svg';
 const PermanentMakeupPage = ({ history }) => {
   return (
     <div className="per-makeup-page">
-      <div className="per-makeup-header">
-        <Header />
-      </div>
       <div className="per-makeup-container">
         <div>
           <img src={per_makeup_one_img} alt="" />
@@ -61,9 +56,6 @@ const PermanentMakeupPage = ({ history }) => {
           </Link>
           <img className="per-makeup-img-two" src={per_makeup_two_img} alt="" />
         </div>
-      </div>
-      <div className="per-makeup-footer">
-        <Footer />
       </div>
     </div>
   );

@@ -1,7 +1,5 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import Header from '../../components/Header/Header';
-import Footer from '../../components/Footer/Footer';
 
 import './TattooPage.scss';
 import tattoo_one_img from '../../img/tattoo-one.svg';
@@ -12,9 +10,6 @@ import line_tattoo from '../../img/line-tattoo.svg';
 const TattooPage = ({ history }) => {
   return (
     <div className="tattoo-page">
-      <div className="tattoo-header">
-        <Header />
-      </div>
       <div className="tattoo-container">
         <div>
           <img src={tattoo_one_img} alt="" />
@@ -59,9 +54,6 @@ const TattooPage = ({ history }) => {
           </Link>
           <img className="tattoo-img-two" src={tattoo_two_img} alt="" />
         </div>
-      </div>
-      <div className="tattoo-footer">
-        <Footer />
       </div>
     </div>
   );

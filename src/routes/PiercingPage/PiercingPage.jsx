@@ -1,7 +1,5 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import Header from '../../components/Header/Header';
-import Footer from '../../components/Footer/Footer';
 
 import './PiercingPage.scss';
 import piercing_one_img from '../../img/piercing-one.svg';
@@ -12,9 +10,6 @@ import line_tattoo from '../../img/line-tattoo.svg';
 const PiercingPage = ({ history }) => {
   return (
     <div className="piercing-page">
-      <div className="piercing-header">
-        <Header />
-      </div>
       <div className="piercing-container">
         <div>
           <img src={piercing_one_img} alt="" />
@@ -63,9 +58,6 @@ const PiercingPage = ({ history }) => {
           </Link>
           <img className="piercing-img-two" src={piercing_two_img} alt="" />
         </div>
-      </div>
-      <div className="piercing-footer">
-        <Footer />
       </div>
     </div>
   );

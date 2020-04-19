@@ -1,6 +1,4 @@
 import React from 'react';
-import Header from '../../components/Header/Header';
-import Footer from '../../components/Footer/Footer';
 
 import './TattooRemovalPage.scss';
 import tattoo_rem_one_img from '../../img/tattoo-rem-one.svg';
@@ -11,9 +9,6 @@ import { Link } from 'react-router-dom';
 const TattooRemovalPage = ({ history }) => {
   return (
     <div className="tattoo-rem-page">
-      <div className="tattoo-rem-header">
-        <Header />
-      </div>
       <div className="tattoo-rem-container">
         <div>
           <img src={tattoo_rem_one_img} alt="" />
@@ -62,9 +57,6 @@ const TattooRemovalPage = ({ history }) => {
             </button>
           </Link>
         </div>
-      </div>
-      <div className="tattoo-rem-footer">
-        <Footer />
       </div>
     </div>
   );

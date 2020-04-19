@@ -2,7 +2,6 @@ import React, { useContext } from 'react';
 import { useParams } from 'react-router-dom';
 import { ArtistsContext } from '../../contexts/ArtistsContext';
 import { Link } from 'react-router-dom';
-import Header from '../../components/Header/Header';
 
 import andr1 from '../../img/Tattoo artist/Andrey/Andrey1.jpg';
 import andr2 from '../../img/Tattoo artist/Andrey/Andrey2.jpg';
@@ -11,7 +10,6 @@ import andr4 from '../../img/Tattoo artist/Andrey/Andrey4.jpg';
 import andr5 from '../../img/Tattoo artist/Andrey/Andrey5.jpg';
 import andr6 from '../../img/Tattoo artist/Andrey/Andrey6.jpg';
 import './AboutArtist.scss';
-import Footer from '../../components/Footer/Footer';
 
 const AboutArtist = () => {
   const artists = useContext(ArtistsContext).artists[0];
@@ -22,7 +20,6 @@ const AboutArtist = () => {
 
   return (
     <div className="about-artist">
-      <Header />
       {artist.id === 1 || artist.id === 3 ? (
         <div className="about-header">
           <div className="artist-info">
@@ -87,7 +84,6 @@ const AboutArtist = () => {
           </Link>
         </div>
       </div>
-      <Footer />
     </div>
   );
 };

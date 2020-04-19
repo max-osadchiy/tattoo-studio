@@ -1,10 +1,9 @@
 .about-artist {
   width: 100vw;
-  position: absolute;
+  padding-top: 8%;
   & > .about-header {
     display: flex;
     height: 88vh;
-    margin-top: 12vh;
     justify-content: space-between;
     & > .artist-info {
       margin: 0 8vw;
