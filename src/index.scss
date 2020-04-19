@@ -1,5 +1,26 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+@font-face {
+  font-family: 'Roboto';
+  font-weight: bold;
+  src: url(./fonts/Roboto-Bold.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Roboto';
+  font-weight: normal;
+  src: url(./fonts/Roboto-Regular.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Raleway';
+  font-weight: bold;
+  src: url(./fonts/Raleway-Bold.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Raleway';
+  font-weight: normal;
+  src: url(./fonts/Raleway-Regular.ttf) format('truetype');
+}
 
 html,
 body {
@@ -55,7 +76,7 @@ h4 {
 }
 
 p {
-  font-family: 'Raleway';
+  font-family: Raleway;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
@@ -63,6 +84,7 @@ p {
   display: flex;
   align-items: center;
   letter-spacing: 0.04em;
+  color: #c4c4c4;
 }
 
 a {

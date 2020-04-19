@@ -11,6 +11,8 @@ import PiercingPage from './routes/PiercingPage/PiercingPage';
 import TattooRemovalPage from './routes/TattooRemovalPage/TattooRemovalPage';
 import PermanentMakeupPage from './routes/PermanentMakeupPage/PermanentMakeupPage';
 import AboutArtist from './routes/AboutArtist/AboutArtist';
+import Header from './components/Header/Header';
+import Footer from './components/Footer/Footer';
 
 import './index.scss';
 
@@ -33,24 +35,26 @@ const App = () => {
   }, []);
 
   return (
-    <Router>
-      <Switch>
-        <Route path="/" component={MainPage} exact />
-        <Route path="/appointment" component={AppointmentPage} exact />
-        <Route path="/menu" component={menu} exact />
-        <Route path="/tattoo" component={TattooPage} exact />
-        <Route path="/piercing" component={PiercingPage} exact />
-        <Route path="/tattoo-removal" component={TattooRemovalPage} exact />
-        <Route path="/permanent-makeup" component={PermanentMakeupPage} exact />
-        <ArtistsProvider>
-          <Route path="/about/:name" exact>
-            <AboutArtist name={window.location.href} />
-          </Route>
-          <Route path="/about" component={AboutPage} exact />
-          <Route path="/profile" component={ProfilePage} exact />
-        </ArtistsProvider>
-      </Switch>
-    </Router>
+      <Router>
+        <Header />
+        <Switch>
+          <Route path="/" component={MainPage} exact />
+          <Route path="/appointment" component={AppointmentPage} exact />
+          <Route path="/menu" component={menu} exact />
+          <Route path="/tattoo" component={TattooPage} exact />
+          <Route path="/piercing" component={PiercingPage} exact />
+          <Route path="/tattoo-removal" component={TattooRemovalPage} exact />
+          <Route path="/permanent-makeup" component={PermanentMakeupPage} exact />
+          <ArtistsProvider>
+            <Route path="/about/:name" exact>
+              <AboutArtist name={window.location.href} />
+            </Route>
+            <Route path="/about" component={AboutPage} exact />
+            <Route path="/profile" component={ProfilePage} exact />
+          </ArtistsProvider>
+        </Switch>
+        <Footer />
+      </Router>
   );
 };
 

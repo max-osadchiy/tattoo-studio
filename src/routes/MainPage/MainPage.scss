@@ -1,17 +1,18 @@
 figure {
-  overflow: hidden;
+    background: url(/static/media/1img.0c6634ab.jpg);
+    height: 100%;
+    width:60%;
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    top: 0;
+    right:0;
 }
 
 figure img {
-  margin-right: -5.5%;
+  margin-right: -15.5%;
   }
 
-
-@media screen and (max-width: 1440px) and (max-height: 900px) {
-  figure img {
-    margin-right: -29.5%;
-  }
-}
 
 .wrapper {
   margin-left: 70px;
@@ -40,12 +41,6 @@ figure img {
   color: rgba(233, 116, 119, 0.1);
 }
 
-.high-number-one {
-  position: absolute;
-  left: 165px;
-  top: 205px;
-}
-
 .high-number-two {
   position: absolute;
   top: -99px;
@@ -66,6 +61,7 @@ figure img {
 
 .first-block {
   position: relative;
+  height: 100vh;
 }
 
 .second-block {
@@ -132,7 +128,7 @@ h2 {
   align-items: center;
   position: absolute;
   width: 31%;
-  margin-left: 36.5%;
+  margin-left: 37%;
   bottom: -1px;
   display: flex;
   box-shadow: 0px 12px 50px rgba(233, 116, 119, 0.25);
