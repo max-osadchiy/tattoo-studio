@@ -8,8 +8,6 @@ import avatar_1 from '../../../img/Anna.svg'
 import avatar_2 from '../../../img/Alex.svg'
 import avatar_3 from '../../../img/Mark.svg'
 import avatar_4 from '../../../img/Viktoria.svg';
-import arrowLeft from '../../../img/arrow-left.svg'
-import arrowRight from '../../../img/arrow-right.svg'
 
 const ReviewsContainer = () => {
     const s = [

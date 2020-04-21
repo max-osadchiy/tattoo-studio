@@ -145,7 +145,7 @@ const Menu = ({ show, setShow }) => {
             </Link>
           </div>
         </div>
-        <div>
+        <div className="menu-contact">
           <h3>
             Street Tattoo Studio <br /> 16A Grecheskaya street, Odessa, Ukraine
           </h3>

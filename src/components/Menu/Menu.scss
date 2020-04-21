@@ -4,6 +4,11 @@
   background: rgba(0, 0, 0, 0.95);
   position: absolute;
   z-index: 1;
+  & > img {
+    position: absolute;
+    margin: 55px;
+    cursor: pointer;
+    }
 }
 
 .menu-container {
@@ -55,15 +60,11 @@
   }
 }
 
-.menu-component > img {
-  position: absolute;
-  margin: 55px;
-}
-
-.dis-n {
-  display: none;
-}
-
-.dis-b {
-  display: block;
+.menu-contact {
+  & > h3 {
+    margin-top: 1rem;
+  }
+  & > h3:first-child {
+    margin-bottom: 2.5rem;
+  }
 }

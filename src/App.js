@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import MainPage from './routes/MainPage/MainPage';
 import AboutPage from './routes/AboutPage/AboutPage';
 import ProfilePage from './routes/ProfilePage/ProfilePage';
@@ -11,8 +11,7 @@ import PiercingPage from './routes/PiercingPage/PiercingPage';
 import TattooRemovalPage from './routes/TattooRemovalPage/TattooRemovalPage';
 import PermanentMakeupPage from './routes/PermanentMakeupPage/PermanentMakeupPage';
 import AboutArtist from './routes/AboutArtist/AboutArtist';
-import Header from './components/Header/Header';
-import Footer from './components/Footer/Footer';
+import { withLayout } from './layout/Layout';
 
 const App = () => {
   useEffect(() => {
@@ -32,27 +31,40 @@ const App = () => {
   }, []);
 
   return (
-      <Router>
-        <Header />
+      <BrowserRouter>
         <Switch>
-          <Route path="/" component={MainPage} exact />
-          <Route path="/appointment" component={AppointmentPage} exact />
-          <Route path="/menu" component={menu} exact />
-          <Route path="/tattoo" component={TattooPage} exact />
-          <Route path="/piercing" component={PiercingPage} exact />
-          <Route path="/tattoo-removal" component={TattooRemovalPage} exact />
-          <Route path="/permanent-makeup" component={PermanentMakeupPage} exact />
+          <RouteWrapper path="/" component={MainPage} layout={withLayout} exact />
+          <Route path="/appointment" component={AppointmentPage} layout={withLayout} exact />
+          <RouteWrapper path="/menu" component={menu} layout={withLayout} exact />
+          <RouteWrapper path="/tattoo" component={TattooPage} layout={withLayout} exact />
+          <RouteWrapper path="/piercing" component={PiercingPage} layout={withLayout} exact />
+          <RouteWrapper path="/tattoo-removal" component={TattooRemovalPage} layout={withLayout} exact />
+          <RouteWrapper path="/permanent-makeup" component={PermanentMakeupPage} layout={withLayout} exact />
           <ArtistsProvider>
-            <Route path="/about/:name" exact>
+            <RouteWrapper path="/about/:name" layout={withLayout} exact>
               <AboutArtist name={window.location.href} />
-            </Route>
-            <Route path="/about" component={AboutPage} exact />
-            <Route path="/profile" component={ProfilePage} exact />
+            </RouteWrapper>
+            <RouteWrapper path="/about" component={AboutPage} layout={withLayout} exact />
+            <RouteWrapper path="/profile" component={ProfilePage} layout={withLayout} exact />
           </ArtistsProvider>
         </Switch>
-        <Footer />
-      </Router>
+      </BrowserRouter>
   );
 };
+
+const RouteWrapper = ({
+  component: Component, 
+  layout: Layout, 
+  ...rest
+}) => {
+  return (
+    <Route {...rest} render={(props) =>
+      <Layout {...props}>
+        <Component {...props} />
+      </Layout>
+    } />
+  )
+}
+
 
 export default App;

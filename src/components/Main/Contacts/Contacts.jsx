@@ -4,7 +4,7 @@ import './Contacts.scss'
 
 const Contacts = () => {
     return (
-        <div className="Contacts">
+        <div className="contacts-left">
             <div>TW</div>
             <div>FB</div>
             <div>INST</div>

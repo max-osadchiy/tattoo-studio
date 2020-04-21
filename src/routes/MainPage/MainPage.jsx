@@ -9,6 +9,7 @@ import ReviewsContainer from '../../components/Main/ReviewsContainer/ReviewsCont
 import '../../img/Main/1img.jpg';
 import swipe from '../../img/swipe.svg';
 import './MainPage.scss';
+import LanguageBlock from '../../components/Main/LanguageBlock/LanguageBlock';
 
 const MainPage = () => {
   return (
@@ -21,6 +22,7 @@ const MainPage = () => {
         </div>
         <TextContainer />
         <Contacts />
+        <LanguageBlock />
       </div>
       <div className="second-block">
         <h1>Services</h1>

@@ -41,7 +41,7 @@ const Header = () => {
             <img src={logo} alt="logo" />
           </div>
         </Link>
-        <div className="phone-num">
+        <div className="auth-a">
           {localStorage.getItem('name') ? (
             <Link to="/profile">
               <h3>{localStorage.getItem('name')}</h3>
