@@ -16,7 +16,7 @@ import { withLayout } from './layout/Layout';
 const App = () => {
   useEffect(() => {
     const _onInit = (auth2) => {
-      console.log('init OK', auth2);
+      console.log('init OK');
     };
     const _onError = (err) => {
       console.log('error', err);
@@ -41,9 +41,7 @@ const App = () => {
           <RouteWrapper path="/tattoo-removal" component={TattooRemovalPage} layout={withLayout} exact />
           <RouteWrapper path="/permanent-makeup" component={PermanentMakeupPage} layout={withLayout} exact />
           <ArtistsProvider>
-            <RouteWrapper path="/about/:name" layout={withLayout} exact>
-              <AboutArtist name={window.location.href} />
-            </RouteWrapper>
+            <RouteWrapper path="/about/:name" component={AboutArtist} name={window.location.href} layout={withLayout} exact />
             <RouteWrapper path="/about" component={AboutPage} layout={withLayout} exact />
             <RouteWrapper path="/profile" component={ProfilePage} layout={withLayout} exact />
           </ArtistsProvider>
