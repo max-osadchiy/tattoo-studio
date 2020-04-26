@@ -13,10 +13,10 @@
   & > .contacts {
     display: flex;
     flex-direction: column;
-    justify-content: inherit;
     & > div {
       display: flex;
       justify-content: space-evenly;
+      margin-top: 1rem;
       h4 {
         line-height: 2;
       }
@@ -28,11 +28,11 @@
   & > .social {
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
     & > div {
       display: flex;
       justify-content: space-around;
       align-items: center;
+      margin-top: 1rem;
       & > h4 {
         margin: 0 1vw;
         cursor: pointer;
