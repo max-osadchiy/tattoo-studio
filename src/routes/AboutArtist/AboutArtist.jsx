@@ -25,9 +25,6 @@ const AboutArtist = () => {
           <div className="artist-info">
             <h1>{artist.name}</h1>
             <p className="skills">{artists[0].skills}</p>
-            <br />
-            <br />
-            <br />
             {artist.quotes.map((quote, id) => (
               <p key={id}>{quote}</p>
             ))}
@@ -41,13 +38,13 @@ const AboutArtist = () => {
             </a>
           </div>
           <div className="artist-img">
-            <img src={artist.photo} alt="Artist photo" />
+            <img src={artist.photo} alt="Artist" />
           </div>
         </div>
       ) : (
         <div className="about-header">
           <div className="artist-img">
-            <img src={artist.photo} alt="Artist photo" />
+            <img src={artist.photo} alt="Artist" />
           </div>
           <div className="artist-info">
             <h1>{artist.name}</h1>
@@ -73,7 +70,7 @@ const AboutArtist = () => {
         <h1>{artist.name.split(' ')[0]}'s works</h1>
         <div className="about-photos">
           {artist.works.map((img, id) => (
-            <img key={id} src={img} />
+            <img key={id} src={img} alt="Work" />
           ))}
         </div>
         <div className="app-btn">
