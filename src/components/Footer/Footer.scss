@@ -37,6 +37,9 @@
         margin: 0 1vw;
         cursor: pointer;
       }
+      & > h4:first-child {
+        margin-left: 0;
+      }
     }
   }
 }
