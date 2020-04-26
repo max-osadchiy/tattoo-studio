@@ -49,9 +49,6 @@ const AboutArtist = () => {
           <div className="artist-info">
             <h1>{artist.name}</h1>
             <p className="skills">{artists[0].skills}</p>
-            <br />
-            <br />
-            <br />
             {artist.quotes.map((quote, id) => (
               <p key={id}>{quote}</p>
             ))}
