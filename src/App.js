@@ -24,45 +24,85 @@ const App = () => {
     window.gapi.load('auth2', function () {
       window.gapi.auth2
         .init({
-          client_id: process.env.REACT_APP_GOOGLE_CLIENT_ID,
+          client_id:
+            '590123605848-2jk2e3bbi1dsddb0dv2qthc69cbu041u.apps.googleusercontent.com',
         })
         .then(_onInit, _onError);
     });
   }, []);
 
   return (
-      <BrowserRouter>
-        <Switch>
-          <RouteWrapper path="/" component={MainPage} layout={withLayout} exact />
-          <Route path="/appointment" component={AppointmentPage} layout={withLayout} exact />
-          <RouteWrapper path="/menu" component={menu} layout={withLayout} exact />
-          <RouteWrapper path="/tattoo" component={TattooPage} layout={withLayout} exact />
-          <RouteWrapper path="/piercing" component={PiercingPage} layout={withLayout} exact />
-          <RouteWrapper path="/tattoo-removal" component={TattooRemovalPage} layout={withLayout} exact />
-          <RouteWrapper path="/permanent-makeup" component={PermanentMakeupPage} layout={withLayout} exact />
-          <ArtistsProvider>
-            <RouteWrapper path="/about/:name" component={AboutArtist} name={window.location.href} layout={withLayout} exact />
-            <RouteWrapper path="/about" component={AboutPage} layout={withLayout} exact />
-            <RouteWrapper path="/profile" component={ProfilePage} layout={withLayout} exact />
-          </ArtistsProvider>
-        </Switch>
-      </BrowserRouter>
+    <BrowserRouter>
+      <Switch>
+        <RouteWrapper path="/" component={MainPage} layout={withLayout} exact />
+        <Route
+          path="/appointment"
+          component={AppointmentPage}
+          layout={withLayout}
+          exact
+        />
+        <RouteWrapper path="/menu" component={menu} layout={withLayout} exact />
+        <RouteWrapper
+          path="/tattoo"
+          component={TattooPage}
+          layout={withLayout}
+          exact
+        />
+        <RouteWrapper
+          path="/piercing"
+          component={PiercingPage}
+          layout={withLayout}
+          exact
+        />
+        <RouteWrapper
+          path="/tattoo-removal"
+          component={TattooRemovalPage}
+          layout={withLayout}
+          exact
+        />
+        <RouteWrapper
+          path="/permanent-makeup"
+          component={PermanentMakeupPage}
+          layout={withLayout}
+          exact
+        />
+        <ArtistsProvider>
+          <RouteWrapper
+            path="/about/:name"
+            component={AboutArtist}
+            name={window.location.href}
+            layout={withLayout}
+            exact
+          />
+          <RouteWrapper
+            path="/about"
+            component={AboutPage}
+            layout={withLayout}
+            exact
+          />
+          <RouteWrapper
+            path="/profile"
+            component={ProfilePage}
+            layout={withLayout}
+            exact
+          />
+        </ArtistsProvider>
+      </Switch>
+    </BrowserRouter>
   );
 };
 
-const RouteWrapper = ({
-  component: Component, 
-  layout: Layout, 
-  ...rest
-}) => {
+const RouteWrapper = ({ component: Component, layout: Layout, ...rest }) => {
   return (
-    <Route {...rest} render={(props) =>
-      <Layout {...props}>
-        <Component {...props} />
-      </Layout>
-    } />
-  )
-}
-
+    <Route
+      {...rest}
+      render={(props) => (
+        <Layout {...props}>
+          <Component {...props} />
+        </Layout>
+      )}
+    />
+  );
+};
 
 export default App;
