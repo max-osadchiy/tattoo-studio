@@ -5,11 +5,11 @@ import Contacts from '../../components/Main/Contacts/Contacts';
 import ServicesBlock from '../../components/Main/ServicesBlock/ServicesBlock';
 import SkillContainer from '../../components/Main/SkillContainer/SkillContainer';
 import ReviewsContainer from '../../components/Main/ReviewsContainer/ReviewsContainer';
+import LanguageBlock from '../../components/Main/LanguageBlock/LanguageBlock';
 
+import './MainPage.scss';
 import '../../img/Main/1img.jpg';
 import swipe from '../../img/swipe.svg';
-import './MainPage.scss';
-import LanguageBlock from '../../components/Main/LanguageBlock/LanguageBlock';
 
 const MainPage = () => {
   return (
