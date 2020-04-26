@@ -45,7 +45,7 @@ const ProfilePage = () => {
           <div>
             <div className="form">
               <div>
-                <h3>Name</h3>
+                <h2>Name</h2>
                 <input
                   onChange={(e) => setName(e.target.value)}
                   value={localStorage.getItem('name') || name}
@@ -55,7 +55,7 @@ const ProfilePage = () => {
                 />
               </div>
               <div>
-                <h3>Date of birth</h3>
+                <h2>Date of birth</h2>
                 <input
                   onFocus={() => setDateField(!dateField)}
                   onBlur={() => setDateField(!dateField)}
@@ -67,7 +67,7 @@ const ProfilePage = () => {
                 />
               </div>
               <div>
-                <h3>Phone</h3>
+                <h2>Phone</h2>
                 <input
                   id="user-phone"
                   onChange={(e) => setPhone(e.target.value)}
@@ -77,7 +77,7 @@ const ProfilePage = () => {
                 />
               </div>
               <div>
-                <h3>E-Mail</h3>
+                <h2>E-Mail</h2>
                 <input
                   onChange={(e) => setEmail(e.target.value)}
                   value={localStorage.getItem('email') || email}
@@ -91,18 +91,6 @@ const ProfilePage = () => {
                 <button className="black-btn" onClick={changeInfo}>
                   <h4>Edit</h4>
                 </button>
-              </div>
-              <div className="br">
-                <h3>Last session</h3>
-                <h3>20.12.2019</h3>
-              </div>
-              <br />
-              <div>
-                <h3>Next session</h3>
-                <span>
-                  <h3>05.03.2020</h3>
-                  <img src={calendarImage} />
-                </span>
               </div>
             </div>
           </div>
@@ -129,18 +117,17 @@ const ProfilePage = () => {
                 >
                   {artists.map((art) =>
                     art.id === artistId + 1 ? null : (
-                      <h2
-                        style={{ borderBottom: '1px solid #e97477' }}
-                        onClick={() => change(art)}
-                        key={art.id}
-                      >
+                      <h2 onClick={() => change(art)} key={art.id}>
                         {art.name}
                       </h2>
                     )
                   )}
                 </div>
-                <p>{artists[artistId].skills}</p>
+                <p style={{ display: hidden ? 'block' : 'none' }}>
+                  {artists[artistId].skills}
+                </p>
                 <Link
+                  style={{ display: hidden ? 'block' : 'none' }}
                   to={`/about/${artists[artistId].name
                     .split(' ')[0]
                     .toLowerCase()}`}
@@ -151,17 +138,33 @@ const ProfilePage = () => {
                 </Link>
               </div>
             </div>
-
-            <div className="sessions br">
-              <div>
-                <h2>Session left</h2>
-                <h2>1</h2>
-              </div>
-              <br />
-              <div>
-                <h2>Number of sessions</h2>
-                <h2>2</h2>
-              </div>
+          </div>
+        </div>
+        <div className="sessions">
+          <div className="">
+            <div className="br">
+              <h2>Last session</h2>
+              <h3>20.12.2019</h3>
+            </div>
+            <div className="br">
+              <h2>Next session</h2>
+              <span>
+                <h3>05.03.2020</h3>
+                <img src={calendarImage} alt="calendar" />
+              </span>
+            </div>
+          </div>
+          <div className="">
+            <div>
+              <h2>Session left</h2>
+              <h3>1</h3>
+            </div>
+            <br />
+            <div>
+              <h2>
+                Number of <br /> sessions
+              </h2>
+              <h3>2</h3>
             </div>
           </div>
         </div>

@@ -1,3 +1,6 @@
+h3 {
+  color: white;
+}
 .profile-caption {
   display: flex;
   flex-direction: column;
@@ -10,17 +13,19 @@
   }
 }
 
-.br {
-  margin-top: 4vh;
-}
-
 .profile-data {
   display: flex;
   width: 100%;
   margin-top: 3vh;
   & > div {
-    margin: 0 8vw;
+    margin: 0 4vw;
     width: 50vw;
+    &:last-child {
+      width: 40vw;
+    }
+    h3 {
+      color: white;
+    }
     & > .form {
       display: flex;
       flex-direction: column;
@@ -41,11 +46,21 @@
           border: none;
           background: transparent;
           border-bottom: 1px solid #e97477;
-          width: 12vw;
+          width: 16vw;
           color: white;
           &:focus {
             outline: none;
           }
+        }
+        & > button {
+          width: 16vw;
+        }
+      }
+      & > div > .br {
+        margin-top: 4vh;
+        justify-content: flex-start;
+        & > h3 {
+          margin-right: 4vw;
         }
       }
     }
@@ -68,8 +83,8 @@
         justify-content: flex-start;
         flex-direction: column;
         align-items: center;
-        margin-left: 15vw;
-        width: 70%;
+        margin-left: 8vw;
+        width: 100%;
         & > span {
           width: 100%;
           display: flex;
@@ -98,14 +113,43 @@
         }
       }
     }
+  }
+}
 
-    & > .sessions {
-      display: flex;
-      flex-direction: column;
+.sessions {
+  display: flex;
+  // flex-direction: column;
+  margin-top: 4rem;
+  width: 100vw;
+  display: flex;
+  & > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 46%;
+    margin: 0 4vw;
+    &:first-child {
+      align-items: flex-start;
+      margin: 0 6vw;
       & > div {
-        display: flex;
+        width: 30vw;
         justify-content: space-between;
-        width: 50%;
+      }
+    }
+    & > div {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 18vw;
+      & > h2,
+      & > span > h3 {
+        &:first-child {
+          margin-right: 2vw;
+        }
+      }
+      & > span {
+        display: flex;
       }
     }
   }
@@ -114,12 +158,13 @@
 .buttons {
   width: 100%;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
+  align-items: center;
   margin-bottom: 3rem;
   .lower-btn {
     display: flex;
     justify-content: flex-end;
-    margin-top: 4rem;
+    margin: 4rem 4vw;
     &.right {
       justify-content: flex-start;
     }

@@ -1,6 +1,6 @@
 .appointment-content {
   width: 80%;
-  margin: 0 10%;
+  margin: 0 4%;
   height: 100vh;
   display: flex;
   align-items: flex-start;
@@ -11,6 +11,7 @@
   }
   & > h1 {
     text-transform: uppercase;
+    width: 50%;
   }
   & > .line {
     width: 12.5vw;
