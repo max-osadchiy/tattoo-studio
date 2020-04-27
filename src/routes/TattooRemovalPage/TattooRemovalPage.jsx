@@ -17,7 +17,7 @@ const TattooRemovalPage = ({ history }) => {
           <h4 className="reset-btn" onClick={() => history.goBack()}>
             <img src={arrow_left} alt="" /> return
           </h4>
-          <h1>Piercing</h1>
+          <h1>Tattoo removal</h1>
           <img src={line_tattoo} alt="" />
           <h2 className="h2-to-p removal-first">Tattoo removal</h2>
           <p>

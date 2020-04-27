@@ -5,22 +5,22 @@
   position: relative;
   margin: 2vh 0;
   padding-top: 10%;
-}
-
-.piercing-container h4 {
-  color: #e97477;
-}
-
-.piercing-container > h2,
-.piercing-container > h1 {
-  margin-top: 7%;
-  margin-bottom: 0;
+  & > h1 {
+    margin-top: 7%;
+  }
+  & > h1, h2 {
+    margin-bottom: 0;
+    line-height: 0.9;
+  }
+  & > h4 {
+    color: #e97477;
+  }
 }
 
 .piercing-text {
   width: 30%;
   margin-left: 3%;
-  margin-right: 29%;
+  margin-right: 28%;
   & > h4:hover {
     cursor: pointer;
   }
@@ -49,6 +49,7 @@
 
 .h2-to-p {
   margin-top: 10%;
+  line-height: 0.9;
   &::after {
     font-family: 'Raleway';
     font-style: normal;
