@@ -7,11 +7,15 @@
   & > .close-cross {
     margin: 30px;
     margin-top: 40px;
+    width: 100%;
+    margin-top: 1.5rem;
     cursor: pointer;
   }
   & > h1 {
     text-transform: uppercase;
     width: 50%;
+    text-align: right;
+    margin-top: 13rem;
   }
   & > .line {
     width: 12.5vw;
@@ -113,7 +117,7 @@
       width: 48px;
       height: 48px;
       & > div > img {
-        width: 100%;
+        margin-top: 1.5rem;
       }
     }
   }

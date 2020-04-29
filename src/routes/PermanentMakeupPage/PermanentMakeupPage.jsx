@@ -22,7 +22,7 @@ const PermanentMakeupPage = ({ history }) => {
           <img src={line_tattoo} alt="" />
           <h2 className="h2-to-p perm-first">The permanent makeup</h2>
           <p>
-            The procedure of permanent makeup may be accompanied by pain. Pain
+            procedure. The procedure of permanent makeup may be accompanied by pain. Pain
             threshold each client perceives pain differently, a pain threshold
             plays a special role. You can safely transfer the procedure of
             permanent makeup. But people with a high pain threshold are

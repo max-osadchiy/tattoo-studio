@@ -34,7 +34,7 @@ const TattooPage = ({ history }) => {
           </p>
           <h2 className="h2-to-p tattoo-second">Street tattoo artists</h2>
           <p>
-            and tattoo equipment from leading brands. We strictly comply with
+            materials and tattoo equipment from leading brands. We strictly comply with
             sanitary standards, because we consider a tattoo a medical
             procedure. Sterility and craftsmanship come first for us.
           </p>

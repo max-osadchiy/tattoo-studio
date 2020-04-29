@@ -39,18 +39,14 @@ const TattooRemovalPage = ({ history }) => {
           </p>
           <h2 className="h2-to-p removal-third">Colored tattoos</h2>
           <p>
-            by the laser beam, respectively, it takes more time to get rid of
+            perceived by the laser beam, respectively, it takes more time to get rid of
             these areas. On average, 10-15 sessions are needed for complete
             removal, about 3-5 sessions are needed to prepare for overlapping.
           </p>
           <h2 className="h2-to-p removal-fourth">The duration</h2>
-          <p>tattoo.</p>
-          <br />
-          <p>
-            After the session, the area affected by the beam turns red. In some
+          <p>tattoo. After the session, the area affected by the beam turns red. In some
             cases, a crust appears on this area, which in no case can be
-            scratched or peeled.
-          </p>
+            scratched or peeled.</p>
           <Link to="/appointment">
             <button className="tattoo-rem-btn black-btn">
               <h4>get an appointment</h4>
