@@ -21,12 +21,12 @@ const Header = () => {
       window.location.reload();
     });
   };
-  const signOut = () => {
-    const auth2 = window.gapi.auth2.getAuthInstance();
-    auth2.signOut().then(() => {
-      console.log('User signed out.');
-    });
-  };
+  // const signOut = () => {
+  //   const auth2 = window.gapi.auth2.getAuthInstance();
+  //   auth2.signOut().then(() => {
+  //     console.log('User signed out.');
+  //   });
+  // };
 
   return (
     <div className="Header wrapper-abs">

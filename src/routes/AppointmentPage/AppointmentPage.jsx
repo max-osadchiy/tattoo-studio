@@ -1,13 +1,12 @@
 import React, { useState } from 'react';
 
 import cross from '../../img/cross.svg';
-import arrLeft from '../../img/arrow-left.svg';
 import './AppointmentPage.scss';
 import { Link } from 'react-router-dom';
 
 const AppointmentPage = ({ history }) => {
-  const emailRegex = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-  const phoneRegex = /^[0-9]{10}$/;
+  const emailRegex = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+  const phoneRegex = /^0-9{10}$/;
   const [name, setName] = useState('');
   const [select1, setSelect1] = useState(false);
   const [select2, setSelect2] = useState(false);

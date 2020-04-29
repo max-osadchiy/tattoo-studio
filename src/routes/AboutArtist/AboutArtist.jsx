@@ -2,13 +2,6 @@ import React, { useContext } from 'react';
 import { useParams } from 'react-router-dom';
 import { ArtistsContext } from '../../contexts/ArtistsContext';
 import { Link } from 'react-router-dom';
-
-import andr1 from '../../img/Tattoo artist/Andrey/Andrey1.jpg';
-import andr2 from '../../img/Tattoo artist/Andrey/Andrey2.jpg';
-import andr3 from '../../img/Tattoo artist/Andrey/Andrey3.jpg';
-import andr4 from '../../img/Tattoo artist/Andrey/Andrey4.jpg';
-import andr5 from '../../img/Tattoo artist/Andrey/Andrey5.jpg';
-import andr6 from '../../img/Tattoo artist/Andrey/Andrey6.jpg';
 import './AboutArtist.scss';
 
 const AboutArtist = () => {
@@ -28,7 +21,7 @@ const AboutArtist = () => {
             {artist.quotes.map((quote, id) => (
               <p key={id}>{quote}</p>
             ))}
-            <a>
+            <a href="#photos">
               <button
                 className="black-btn"
                 onClick={() => (window.location.hash = '#photos')}
@@ -52,7 +45,7 @@ const AboutArtist = () => {
             {artist.quotes.map((quote, id) => (
               <p key={id}>{quote}</p>
             ))}
-            <a>
+            <a href="#photos">
               <button
                 className="black-btn"
                 onClick={() => (window.location.hash = '#photos')}

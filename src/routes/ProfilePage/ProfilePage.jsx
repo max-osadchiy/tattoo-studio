@@ -99,7 +99,7 @@ const ProfilePage = () => {
             <h2>Your artist</h2>
             <div className="artist">
               <div className="rounded-img">
-                <img src={artists[artistId].photoCropped} alt="" />
+                <img src={artists[artistId].photoCropped} alt="artist" />
               </div>
 
               <div className="artist-info">
@@ -133,7 +133,7 @@ const ProfilePage = () => {
                     .toLowerCase()}`}
                 >
                   <h4 className="reset-btn">
-                    Look more <img src={arrowRight} />
+                    Look more <img alt="arrow" src={arrowRight} />
                   </h4>
                 </Link>
               </div>

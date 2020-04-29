@@ -3,19 +3,10 @@ import { HashLink as Link } from 'react-router-hash-link';
 
 import './Menu.scss';
 import cross from '../../img/cross.svg';
-import line from '../../img/LineMenu.svg';
 import arrDown from '../../img/arr-down.svg';
 import arrUp from '../../img/arr-up.svg';
 
 const Menu = ({ show, setShow }) => {
-  const [showFirst, setShowFirst] = useState(
-    new RegExp(/(tattoo|piercing|tattoo-removal|permanent-makeup)/).test(
-      window.location.pathname
-    )
-  );
-  const [showSecond, setShowSecond] = useState(
-    new RegExp('/about/').test(window.location.pathname)
-  );
   const [showPopup, setShowPopup] = useState(0);
 
   return (
