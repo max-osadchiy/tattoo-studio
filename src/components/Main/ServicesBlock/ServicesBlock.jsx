@@ -44,8 +44,8 @@ const ServicesBlock = () => {
     },
   ];
 
-  return s.map((event) => (
-    <div className="tattoo-block">
+  return s.map((event, id) => (
+    <div key={id} className="tattoo-block">
       <div className="tattoo-img">
         <img src={event.img} alt="" />
       </div>

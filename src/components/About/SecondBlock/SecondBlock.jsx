@@ -14,8 +14,8 @@ const SecondBlock = () => {
       </div>
       <span className="high-number a-high-number-two">2</span>
       <div className="artists-container">
-        {artists.map((artist) => (
-          <div>
+        {artists.map((artist, id) => (
+          <div key={id}>
             <img
               width="321px"
               height="321px"
